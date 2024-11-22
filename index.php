@@ -24,7 +24,6 @@
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -52,28 +51,28 @@
               <div class="col-lg-3 col-6">
                 <div class="stats-item text-center w-100 h-100">
                   <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="0" class="purecounter">232</span>
-                  <p>Clients</p>
+                  <p>Per second</p>
                 </div>
               </div><!-- End Stats Item -->
 
               <div class="col-lg-3 col-6">
                 <div class="stats-item text-center w-100 h-100">
                   <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="0" class="purecounter">521</span>
-                  <p>Projects</p>
+                  <p>Per minute</p>
                 </div>
               </div><!-- End Stats Item -->
 
               <div class="col-lg-3 col-6">
                 <div class="stats-item text-center w-100 h-100">
                   <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="0" class="purecounter">1453</span>
-                  <p>Support</p>
+                  <p>Per hour</p>
                 </div>
               </div><!-- End Stats Item -->
 
               <div class="col-lg-3 col-6">
                 <div class="stats-item text-center w-100 h-100">
                   <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter">32</span>
-                  <p>Workers</p>
+                  <p>Per day</p>
                 </div>
               </div><!-- End Stats Item -->
 
@@ -135,9 +134,6 @@
 
       <label for="salary">Ingresa tu salario bruto mensual:</label>
       <input type="number" id="salary" placeholder="Salario mensual" min="0" />
-
-      <label for="deduction">Porcentaje de deducción (%):</label>
-      <input type="number" id="deduction" value="9.17" placeholder="Porcentaje de deducción" step="0.01" min="0" />
 
       <label for="period">Selecciona el periodo:</label>
       <select id="period">
@@ -229,147 +225,10 @@
 
   </footer>
 
-  <script>
-    let clockInterval;
-    let totalEarnedNormal = 0;
-    let totalEarnedX2 = 0;
-    let totalEarnedX5 = 0;
-    let previousSalary = null;
-    let totalSeconds = 0;
-    let totalSecondsX2 = 0; 
-    let totalSecondsX5 = 0; 
-
-    function calculate() {
-      const salary = parseFloat(document.getElementById('salary').value);
-      const deductionPercentage = parseFloat(document.getElementById('deduction').value) / 100 || 0;
-      const period = document.getElementById('period').value;
-      const currencySymbol = document.getElementById('currency').value;
-      const price = parseFloat(document.getElementById('price').value) || 0;
-      const numPeople = parseInt(document.getElementById('people').value) || 0;
-
-      if (isNaN(salary) || salary <= 0) {
-        alert("Por favor, ingresa un salario válido.");
-        return;
-      }
-
-      const netSalary = salary * (1 - deductionPercentage);
-      let perPeriod;
-      switch (period) {
-        case 'weekly':
-          perPeriod = netSalary / 4;
-          break;
-        case 'biweekly':
-          perPeriod = netSalary / 2;
-          break;
-        case 'monthly':
-        default:
-          perPeriod = netSalary;
-          break;
-      }
-
-      const hourlyRate = netSalary / (30 * 24);
-      const perSecond = hourlyRate / 3600;
-      const perMinute = hourlyRate / 60;
-      const perDay = hourlyRate * 24;
-
-      const meetingCost = hourlyRate * numPeople; 
-
-      document.getElementById('result').innerHTML = `
-                <h3>Resultados:</h3>
-                <p>Salario neto: ${currencySymbol}${netSalary.toLocaleString(undefined, {minimumFractionDigits: 2})} (Salario bruto - deducción)</p>
-                <p>Por segundo: ${currencySymbol}${perSecond.toLocaleString(undefined, {minimumFractionDigits: 2})}</p>
-                <p>Por minuto: ${currencySymbol}${perMinute.toLocaleString(undefined , {minimumFractionDigits: 2})}</p>
-                <p>Por hora: ${currencySymbol}${hourlyRate.toLocaleString(undefined, {minimumFractionDigits: 2})}</p>
-                <p>Por día: ${currencySymbol}${perDay.toLocaleString(undefined, {minimumFractionDigits: 2})}</p>
-                <p>Por mes: ${currencySymbol}${perPeriod.toLocaleString(undefined, {minimumFractionDigits: 2})}</p>
-            `;
-
-      if (price > 0) {
-        const totalHoursToBuy = price / hourlyRate;
-        document.getElementById('result').innerHTML += `
-                    <p>Esta es la cantidad de horas que te cuesta comprar esto: ${totalHoursToBuy.toFixed(2)} horas.</p>
-                `;
-      }
-
-      if (numPeople === 0) { 
-        document.getElementById('result').innerHTML += `<p>Costo de la reunión: No hay personas en la reunión.</p>`;
-      } else {
-        document.getElementById('result').innerHTML += `
-          <p>Costo de la reunión (1 hora): ${currencySymbol}${meetingCost.toLocaleString(undefined, {minimumFractionDigits: 2})}</p>
-        `;
-      }
-
-      if (previousSalary !== salary) {
-        totalEarnedNormal = 0;
-        totalEarnedX2 = 0;
-        totalEarnedX5 = 0;
-        totalSeconds = 0;
-        totalSecondsX2 = 0; 
-        totalSecondsX5 = 0; 
-        clearInterval(clockInterval);
-        startClock(perSecond);
-      }
-
-      previousSalary = salary;
-    }
-
-    function startClock(rate) {
-      const clockElement = document.getElementById('clock');
-      const earningsElement = document.getElementById('earnings');
-
-      clockInterval = setInterval(() => {
-        totalEarnedNormal += rate;
-        totalEarnedX2 += rate * 2;
-        totalEarnedX5 += rate * 5;
-        totalSeconds += 1;
-        totalSecondsX2 += 2; 
-        totalSecondsX5 += 5; 
-
-        const hours = Math.floor(totalSeconds / 3600);
-        const minutes = Math.floor((totalSeconds % 3600) / 60);
-        const seconds = totalSeconds % 60;
-
-        const hoursX2 = Math.floor(totalSecondsX2 / 3600); 
-        const minutesX2 = Math.floor((totalSecondsX2 % 3600) / 60); 
-        const secondsX2 = totalSecondsX2 % 60; 
-
-        const hoursX5 = Math.floor(totalSecondsX5 / 3600); 
-        const minutesX5 = Math.floor((totalSecondsX5 % 3600) / 60); 
-        const secondsX5 = totalSecondsX5 % 60; 
-
-        clockElement.innerHTML = `
-                    <span>${hours.toString().padStart(2, '0')}</span>:<span>${minutes.toString().padStart(2, '0')}</span>:<span>${seconds.toString().padStart(2, '0')}</span>
-                `;
-        earningsElement.innerHTML = `
-            Ganancias acumuladas: ${document.getElementById('currency').value}${totalEarnedNormal.toLocaleString(undefined, {minimumFractionDigits: 2})} |
-            Ganancias acumuladas (x2): ${document.getElementById('currency').value}${totalEarnedX2.toLocaleString(undefined, {minimumFractionDigits: 2})} | Tiempo (x2): ${hoursX2}h ${minutesX2}m ${secondsX2}s |
-            Ganancias acumuladas (x5): ${document.getElementById('currency').value}${totalEarnedX5.toLocaleString(undefined, {minimumFractionDigits: 2})} |
-            Tiempo (x5): ${hoursX5}h ${minutesX5}m ${secondsX5}s
-        `;
-      }, 1000);
-    }
-
-    function clearFields() {
-      document.getElementById('salary').value = '';
-      document.getElementById('deduction').value = '9.17';
-      document.getElementById('price').value = '';
-      document.getElementById('people').value = '1'; 
-      document.getElementById('result').innerHTML = '';
-      document.getElementById('clock').innerHTML = '';
-      document.getElementById('earnings').innerHTML = ''; 
-      clearInterval(clockInterval);
-      totalEarnedNormal = 0;
-      totalEarnedX2 = 0;
-      totalEarnedX5 = 0;
-      previousSalary = null;
-      totalSeconds = 0;
-      totalSecondsX2 = 0; 
-      totalSecondsX5 = 0; 
-    }
-  </script>
-
   <!-- Vendor JS Files -->
   <script src="assets/vendor/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
