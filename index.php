@@ -28,145 +28,142 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <style>
-
-    h1 {
-      text-align: center;
-      color: #333; /* Color del título */
-    }
-
-    label {
-      display: block;
-      margin-top: 10px;
-      color: #333; /* Color de las etiquetas */
-    }
-
-    input[type="number"],
-    select {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    button {
-      padding: 10px 20px; /* Aumentar el padding horizontal */
-      background-color: #28a745;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease, transform 0.2s ease;
-    }
-
-    button:hover {
-      background-color: #218838;
-      transform: scale(1.05); 
-    }
-
-    .result {
-      margin-top: 20px;
-      background-color: #f9f9f9; /* Fondo claro para los resultados */
-      border-radius: 5px;
-      padding: 15px;
-    }
-
-    .clock-container {
-      background-color: #e0e0f0;
-      border: 2px solid #000;
-      padding: 10px;
-      border-radius: 5px;
-      font-family: monospace;
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    .clock {
-      font-size: 24px;
-      margin: 0;
-    }
-
-    .earnings {
-      font-size: 18px;
-      margin-top: 10px;
-      text-align: center;
-    }
-  </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Calculadora de Salario</h1>
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
 
-    <label for="currency">Selecciona la moneda:</label>
-    <select id="currency">
-      <option value="₡">Colón Costarricense</option>
-      <option value="$">Dólar Estadounidense</option>
-      <option value="€">Euro</option>
-      <option value="£">Libra Esterlina</option>
-      <option value="¥">Yen Japonés</option>
-      <option value="₹">Rupia India</option>
-      <option value="₩">Won Surcoreano</option>
-      <option value="₺">Lira Turca</option>
-      <option value="₽">Rublo Ruso</option>
-      <option value="A$">Dólar Australiano</option>
-      <option value="C$">Dólar Canadiense</option>
-      <option value="NZ$">Dólar Neozelandés</option>
-      <option value="S$">Dólar de Singapur</option>
-      <option value="R$">Real Brasileño</option>
-      <option value="₴">Grivna Ucraniana</option>
-      <option value="₱">Peso Filipino</option>
-      <option value="₫">Dong Vietnamita</option>
-      <option value="₭">Kip Laociano</option>
-      <option value="₮">Tugrik Mongol</option>
-      <option value="B$">Dólar de Barbados</option>
-      <option value="Kč">Corona Checa</option>
-      <option value="kr">Corona Sueca</option>
-      <option value="kr">Corona Danesa</option>
-      <option value="R">Rand Sudafricano</option>
-      <option value="CHF">Franco Suizo</option>
-      <option value="د.إ">Dirham de los Emiratos Árabes Unidos</option>
-      <option value="ل.س">Libra Siria</option>
-      <option value="د.ك">Dinar Kuwaití</option>
-      <option value="BHD">Dinar Bahreiní</option>
-      <option value="J د.">Dinar Jordano</option>
-      <option value="MOP$">Pataca Macanesa</option>
-      <option value="₦">Naira Nigeriana</option>
-      <option value="₵">Cedi Ghanés</option>
-      <option value="₲">Guaraní Paraguayo</option>
-      <option value="₴">Grivna Ucraniana</option>
-    </select>
+      <img src="assets/images/map.png" alt="" class="hero-bg" data-aos="fade-in">
 
-    <label for="salary">Ingresa tu salario bruto mensual:</label>
-    <input type="number" id="salary" placeholder="Salario mensual" min="0" />
+      <div class="container">
+        <div class="row gy-4 d-flex justify-content-between">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+            <h2 data-aos="fade-up">Your Lightning Fast Delivery Partner</h2>
+            <p data-aos="fade-up" data-aos-delay="100">Facere distinctio molestiae nisi fugit tenetur repellat non praesentium nesciunt optio quis sit odio nemo quisquam. eius quos reiciendis eum vel eum voluptatem eum maiores eaque id optio ullam occaecati odio est possimus vel reprehenderit</p>
 
-    <label for="deduction">Porcentaje de deducción (%):</label>
-    <input type="number" id="deduction" value="9.17" placeholder="Porcentaje de deducción" step="0.01" min="0" />
+            <form action="#" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
+              <input type="text" class="form-control" placeholder="Your ZIP code or City. e.g. New York">
+              <button type="submit" class="btn btn-primary">Search</button>
+            </form>
 
-    <label for="period">Selecciona el periodo:</label>
-    <select id="period">
-      <option value="monthly">Mensual</option>
-      <option value="weekly">Semanal</option>
-      <option value="biweekly">Quincenal</option>
-    </select>
+            <div class="row gy-4" data-aos="fade-up" data-aos-delay="300">
 
-    <label for="price">Precio de lo que quieres comprar:</label>
-    <input type="number" id="price" placeholder="Precio del artículo" min="0" />
+              <div class="col-lg-3 col-6">
+                <div class="stats-item text-center w-100 h-100">
+                  <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="0" class="purecounter">232</span>
+                  <p>Clients</p>
+                </div>
+              </div><!-- End Stats Item -->
 
-    <label for="people">Número de personas en la reunión:</label>
-    <input type="number" id="people" placeholder="Número de personas" value="1" /> 
+              <div class="col-lg-3 col-6">
+                <div class="stats-item text-center w-100 h-100">
+                  <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="0" class="purecounter">521</span>
+                  <p>Projects</p>
+                </div>
+              </div><!-- End Stats Item -->
 
-    <button onclick="calculate()">Calcular</button>
-    <button onclick="clearFields()">Limpiar</button>
+              <div class="col-lg-3 col-6">
+                <div class="stats-item text-center w-100 h-100">
+                  <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="0" class="purecounter">1453</span>
+                  <p>Support</p>
+                </div>
+              </div><!-- End Stats Item -->
 
-    <div class="result" id="result"></div>
+              <div class="col-lg-3 col-6">
+                <div class="stats-item text-center w-100 h-100">
+                  <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter">32</span>
+                  <p>Workers</p>
+                </div>
+              </div><!-- End Stats Item -->
 
-    <div class="clock-container">
-      <div class="clock" id="clock"></div>
-      <div class="earnings" id="earnings"></div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+            <img src="assets/images/hero.png" class="img-fluid mb-3 mb-lg-0" alt="">
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <section>
+      <div class="container">
+      <h1>Calculadora de Salario</h1>
+
+      <label for="currency">Selecciona la moneda:</label>
+      <select id="currency">
+        <option value="₡">Colón Costarricense</option>
+        <option value="$">Dólar Estadounidense</option>
+        <option value="€">Euro</option>
+        <option value="£">Libra Esterlina</option>
+        <option value="¥">Yen Japonés</option>
+        <option value="₹">Rupia India</option>
+        <option value="₩">Won Surcoreano</option>
+        <option value="₺">Lira Turca</option>
+        <option value="₽">Rublo Ruso</option>
+        <option value="A$">Dólar Australiano</option>
+        <option value="C$">Dólar Canadiense</option>
+        <option value="NZ$">Dólar Neozelandés</option>
+        <option value="S$">Dólar de Singapur</option>
+        <option value="R$">Real Brasileño</option>
+        <option value="₴">Grivna Ucraniana</option>
+        <option value="₱">Peso Filipino</option>
+        <option value="₫">Dong Vietnamita</option>
+        <option value="₭">Kip Laociano</option>
+        <option value="₮">Tugrik Mongol</option>
+        <option value="B$">Dólar de Barbados</option>
+        <option value="Kč">Corona Checa</option>
+        <option value="kr">Corona Sueca</option>
+        <option value="kr">Corona Danesa</option>
+        <option value="R">Rand Sudafricano</option>
+        <option value="CHF">Franco Suizo</option>
+        <option value="د.إ">Dirham de los Emiratos Árabes Unidos</option>
+        <option value="ل.س">Libra Siria</option>
+        <option value="د.ك">Dinar Kuwaití</option>
+        <option value="BHD">Dinar Bahreiní</option>
+        <option value="J د.">Dinar Jordano</option>
+        <option value="MOP$">Pataca Macanesa</option>
+        <option value="₦">Naira Nigeriana</option>
+        <option value="₵">Cedi Ghanés</option>
+        <option value="₲">Guaraní Paraguayo</option>
+        <option value="₴">Grivna Ucraniana</option>
+      </select>
+
+      <label for="salary">Ingresa tu salario bruto mensual:</label>
+      <input type="number" id="salary" placeholder="Salario mensual" min="0" />
+
+      <label for="deduction">Porcentaje de deducción (%):</label>
+      <input type="number" id="deduction" value="9.17" placeholder="Porcentaje de deducción" step="0.01" min="0" />
+
+      <label for="period">Selecciona el periodo:</label>
+      <select id="period">
+        <option value="monthly">Mensual</option>
+        <option value="weekly">Semanal</option>
+        <option value="biweekly">Quincenal</option>
+      </select>
+
+      <label for="price">Precio de lo que quieres comprar:</label>
+      <input type="number" id="price" placeholder="Precio del artículo" min="0" />
+
+      <label for="people">Número de personas en la reunión:</label>
+      <input type="number" id="people" placeholder="Número de personas" value="1" /> 
+
+      <button onclick="calculate()">Calcular</button>
+      <button onclick="clearFields()">Limpiar</button>
+
+      <div class="result" id="result"></div>
+
+      <div class="clock-container">
+        <div class="clock" id="clock"></div>
+        <div class="earnings" id="earnings"></div>
+      </div>
     </div>
-  </div>
+    </section>
+  </main>
 
   <footer id="footer" class="footer dark-background">
 
