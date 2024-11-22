@@ -6,8 +6,9 @@
   let totalSeconds = 0;
   let totalSecondsX2 = 0; 
   let totalSecondsX5 = 0; 
-
+  document.getElementById('result').style.display = 'none';
   function calculate() {
+    document.getElementById('result').style.display = 'flex';
     const salary = parseFloat(document.getElementById('salary').value);
     const deductionPercentage = 10.67 / 100 ;
     const period = document.getElementById('period').value;
@@ -49,18 +50,20 @@
     document.getElementById('months').getElementsByClassName("purecounter")[0].textContent = `${currencySymbol}${perPeriod.toLocaleString(undefined, {minimumFractionDigits: 2})}`;
 
     if (price > 0) {
-      const totalHoursToBuy = price / hourlyRate;
-      document.getElementById('result').innerHTML += `
-                  <p>Esta es la cantidad de horas que te cuesta comprar esto: ${totalHoursToBuy.toFixed(2)} horas.</p>
-              `;
+        const totalHoursToBuy = price / hourlyRate;
+        document.getElementById('article').getElementsByClassName("purecounter")[0].textContent = `${totalHoursToBuy.toFixed(2)}`;
+    } else {
+        document.getElementById('article').getElementsByClassName("purecounter")[0].textContent = `N/A`;
     }
 
     if (numPeople === 0) { 
-      document.getElementById('result').innerHTML += `<p>Costo de la reunión: No hay personas en la reunión.</p>`;
+        var text = document.createTextNode(`${numPeople} person present`);
+        document.getElementById('meeting').getElementsByClassName("people")[0].appendChild(text);
+        document.getElementById('meeting').getElementsByClassName("purecounter")[0].textContent += `N/A`;
     } else {
-      document.getElementById('result').innerHTML += `
-        <p>Costo de la reunión (1 hora): ${currencySymbol}${meetingCost.toLocaleString(undefined, {minimumFractionDigits: 2})}</p>
-      `;
+        var text = document.createTextNode(`${numPeople} person present`);
+        document.getElementById('meeting').getElementsByClassName("people")[0].appendChild(text);
+        document.getElementById('meeting').getElementsByClassName("purecounter")[0].textContent += `${currencySymbol}${meetingCost.toLocaleString(undefined, {minimumFractionDigits: 2})}`;
     }
 
     if (previousSalary !== salary) {

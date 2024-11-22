@@ -74,13 +74,6 @@ button:hover {
   transform: scale(1.05); 
 }
 
-.result {
-  margin-top: 20px;
-  background-color: #f9f9f9; /* Fondo claro para los resultados */
-  border-radius: 5px;
-  padding: 15px;
-}
-
 .clock-container {
   background-color: #e0e0f0;
   border: 2px solid #000;

@@ -98,8 +98,15 @@
                 <button onclick="calculate()">Calcular</button>
         </div>
       </div>
+      </div>
 
-    <div id="result" class="row gy-4" data-aos="fade-up" data-aos-delay="300">
+    <div id="result" class="row gy-4">
+
+    <div class="col-lg-12 col-12">
+      <div class="container p-1">
+        <h4>Quick analysis over earnings</h4>
+      </div>
+    </div><!-- End Stats Item -->
 
       <div class="col-lg-3 col-6">
         <div id="seconds" class="stats-item text-center w-100 h-100">
@@ -136,15 +143,32 @@
         </div>
       </div><!-- End Stats Item -->
 
+      <div class="col-lg-3 col-6">
+        <div id="article" class="stats-item text-center w-100 h-100">
+          <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter"></span>
+          <p>Hours needed to buy article</p>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-6">
+        <div id="meeting" class="stats-item text-center w-100 h-100">
+          <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter"></span>
+          <p class="people">Funds needed for an hour meeting with </p>
+        </div>
+      </div><!-- End Stats Item -->
+
       </div>
+
     </div>
     </section>
+
     <section>
       <div class="clock-container">
           <div class="clock" id="clock"></div>
           <div class="earnings" id="earnings"></div>
       </div>
     </section>
+
   </main>
 
   <footer id="footer" class="footer dark-background">
