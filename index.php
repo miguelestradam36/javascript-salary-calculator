@@ -1,1 +1,3 @@
-as
+<?php
+echo "as";
+?>
