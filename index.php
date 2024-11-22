@@ -40,10 +40,6 @@
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
             <h2 data-aos="fade-up">Your Lightning Fast Delivery Partner</h2>
             <p data-aos="fade-up" data-aos-delay="100">Facere distinctio molestiae nisi fugit tenetur repellat non praesentium nesciunt optio quis sit odio nemo quisquam. eius quos reiciendis eum vel eum voluptatem eum maiores eaque id optio ullam occaecati odio est possimus vel reprehenderit</p>
-
-            <form action="#" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
-
-              <div>
                 <label for="currency">Selecciona la moneda:</label>
                 <select id="currency">
                   <option value="₡">Colón Costarricense</option>
@@ -100,52 +96,54 @@
                 <input type="number" id="people" placeholder="Número de personas" value="1" /> 
 
                 <button onclick="calculate()">Calcular</button>
-                <button onclick="clearFields()">Limpiar</button>
-
-            </form>
-          </div>
         </div>
       </div>
 
-    <div class="row gy-4" data-aos="fade-up" data-aos-delay="300">
+    <div id="result" class="row gy-4" data-aos="fade-up" data-aos-delay="300">
 
       <div class="col-lg-3 col-6">
-        <div class="stats-item text-center w-100 h-100">
-          <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="0" class="purecounter">232</span>
+        <div id="seconds" class="stats-item text-center w-100 h-100">
+          <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="0" class="purecounter"></span>
           <p>Per second</p>
         </div>
       </div><!-- End Stats Item -->
 
       <div class="col-lg-3 col-6">
-        <div class="stats-item text-center w-100 h-100">
-          <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="0" class="purecounter">521</span>
+        <div id="minutes" class="stats-item text-center w-100 h-100">
+          <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="0" class="purecounter"></span>
           <p>Per minute</p>
         </div>
       </div><!-- End Stats Item -->
 
       <div class="col-lg-3 col-6">
-        <div class="stats-item text-center w-100 h-100">
-          <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="0" class="purecounter">1453</span>
+        <div id="hours" class="stats-item text-center w-100 h-100">
+          <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="0" class="purecounter"></span>
           <p>Per hour</p>
         </div>
       </div><!-- End Stats Item -->
 
       <div class="col-lg-3 col-6">
-        <div class="stats-item text-center w-100 h-100">
-          <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter">32</span>
+        <div id="days" class="stats-item text-center w-100 h-100">
+          <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter"></span>
           <p>Per day</p>
         </div>
       </div><!-- End Stats Item -->
 
-      </div>
+      <div class="col-lg-3 col-6">
+        <div id="months" class="stats-item text-center w-100 h-100">
+          <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter"></span>
+          <p>Per month</p>
+        </div>
+      </div><!-- End Stats Item -->
 
-      <div class="result" id="result"></div>
-
-      <div class="clock-container">
-        <div class="clock" id="clock"></div>
-        <div class="earnings" id="earnings"></div>
       </div>
     </div>
+    </section>
+    <section>
+      <div class="clock-container">
+          <div class="clock" id="clock"></div>
+          <div class="earnings" id="earnings"></div>
+      </div>
     </section>
   </main>
 
@@ -215,10 +213,12 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+<script>
+
+</script>
+
 </body>
 </html>
