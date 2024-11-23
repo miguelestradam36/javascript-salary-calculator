@@ -102,14 +102,13 @@
 
       <div id="result" class="row gy-4">
 
-        <div class="col-lg-12 col-12">
-          <div class="section-title container p-1">
-          <br/>
-          <br/>
-          <h2 class="title">Quick Analysis</h2>
-          <p class="description">Results based on the amount introduced</p>
-          </div>
-        </div><!-- End Stats Item -->
+        <div class="container section-title" data-aos="fade-up">
+        <br/>
+        <br/>
+        <span>Quick Analysis<br></span>
+            <h2 class="title">Quick Analysis</h2>
+            <p class="description">Results based on the amount introduced</p>
+        </div><!-- End Section Title -->
 
         <div class="col-lg-3 col-6">
           <div id="seconds" class="stats-item text-center w-100 h-100">
@@ -164,26 +163,19 @@
           <div class="row">
 
             <div class="row gy-4 pricing-item" data-aos="fade-up" data-aos-delay="100">
-              <div class="col-lg-3 d-flex align-items-center justify-content-center">
+              <div class="col-lg-4 d-flex align-items-center justify-content-center">
                 <h3 id="clock"></h3>
               </div>
-              <div class="col-lg-3 d-flex align-items-center justify-content-center">
+              <div class="col-lg-4 d-flex align-items-center justify-content-center">
                 <h4><sup id="earnings"></sup> earned<span> at this moment</span></h4>
               </div>
-              <div class="col-lg-3 d-flex align-items-center justify-content-center">
+              <div class="col-lg-4 d-flex align-items-center justify-content-center">
                 <ul>
-                  <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                  <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                  <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
+                  <li><i class="bi bi-check"></i> <span>Based on your net salary</span></li>
+                  <li><i class="bi bi-check"></i> <span>We are not keeping your information</span></li>
                 </ul>
               </div>
-              <div class="col-lg-3 d-flex align-items-center justify-content-center">
-                <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
-              </div>
             </div><!-- End Pricing Item -->
-
-            <div class="clock" id="clock"></div>
-            <div class="earnings" id="earnings"></div>
 
           </div>
         </div>
