@@ -7,6 +7,7 @@
   let totalSecondsX2 = 0; 
   let totalSecondsX5 = 0; 
   document.getElementById('result').style.display = 'none';
+  
   function calculate() {
     document.getElementById('result').style.display = 'flex';
     const salary = parseFloat(document.getElementById('salary').value);
