@@ -21,6 +21,7 @@
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/css/bootstrap.min.css" rel="stylesheet">
@@ -103,8 +104,11 @@
     <div id="result" class="row gy-4">
 
     <div class="col-lg-12 col-12">
-      <div class="container p-1">
-        <h4>Quick analysis over earnings</h4>
+      <div class="section-title container p-1">
+      <br/>
+      <br/>
+      <h2 class="title">Quick Analysis</h2>
+      <p class="description">Results based on the amount introduced</p>
       </div>
     </div><!-- End Stats Item -->
 
@@ -151,6 +155,22 @@
       </div><!-- End Stats Item -->
 
       <div class="col-lg-3 col-6">
+        <div id="meeting" class="stats-item text-center w-100 h-100">
+          <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter"></span>
+          <p class="people">Funds needed for an hour meeting with </p>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-12 col-12">
+      <div class="section-title container p-1">
+      <br/>
+      <br/>
+      <h2 class="title">Quick Analysis <i class="bi bi-broadcast"></i></h2>
+      <p class="description">Results based on the amount introduced</p>
+      </div>
+    </div><!-- End Stats Item -->
+
+    <div class="col-lg-3 col-6">
         <div id="meeting" class="stats-item text-center w-100 h-100">
           <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter"></span>
           <p class="people">Funds needed for an hour meeting with </p>
