@@ -104,15 +104,8 @@
       const minutesX5 = Math.floor((totalSecondsX5 % 3600) / 60); 
       const secondsX5 = totalSecondsX5 % 60; 
 
-      clockElement.innerHTML = `
-                  <span>${hours.toString().padStart(2, '0')}</span>:<span>${minutes.toString().padStart(2, '0')}</span>:<span>${seconds.toString().padStart(2, '0')}</span>
-              `;
-      earningsElement.innerHTML = `
-          Ganancias acumuladas: ${document.getElementById('currency').value}${totalEarnedNormal.toLocaleString(undefined, {minimumFractionDigits: 2})} |
-          Ganancias acumuladas (x2): ${document.getElementById('currency').value}${totalEarnedX2.toLocaleString(undefined, {minimumFractionDigits: 2})} | Tiempo (x2): ${hoursX2}h ${minutesX2}m ${secondsX2}s |
-          Ganancias acumuladas (x5): ${document.getElementById('currency').value}${totalEarnedX5.toLocaleString(undefined, {minimumFractionDigits: 2})} |
-          Tiempo (x5): ${hoursX5}h ${minutesX5}m ${secondsX5}s
-      `;
+      clockElement.innerHTML = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+      earningsElement.innerHTML = `${document.getElementById('currency').value}${totalEarnedNormal.toLocaleString(undefined, {minimumFractionDigits: 2})}`;
     }, 1000);
   }
 

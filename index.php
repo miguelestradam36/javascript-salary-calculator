@@ -99,93 +99,95 @@
                 <button onclick="calculate()">Calcular</button>
         </div>
       </div>
-      </div>
 
-    <div id="result" class="row gy-4">
+      <div id="result" class="row gy-4">
 
-    <div class="col-lg-12 col-12">
-      <div class="section-title container p-1">
-      <br/>
-      <br/>
-      <h2 class="title">Quick Analysis</h2>
-      <p class="description">Results based on the amount introduced</p>
-      </div>
-    </div><!-- End Stats Item -->
+        <div class="col-lg-12 col-12">
+          <div class="section-title container p-1">
+          <br/>
+          <br/>
+          <h2 class="title">Quick Analysis</h2>
+          <p class="description">Results based on the amount introduced</p>
+          </div>
+        </div><!-- End Stats Item -->
 
-      <div class="col-lg-3 col-6">
-        <div id="seconds" class="stats-item text-center w-100 h-100">
-          <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="0" class="purecounter"></span>
-          <p>Per second</p>
+        <div class="col-lg-3 col-6">
+          <div id="seconds" class="stats-item text-center w-100 h-100">
+            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="0" class="purecounter"></span>
+            <p>Per second</p>
+          </div>
+        </div><!-- End Stats Item -->
+
+        <div class="col-lg-3 col-6">
+          <div id="minutes" class="stats-item text-center w-100 h-100">
+            <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="0" class="purecounter"></span>
+            <p>Per minute</p>
+          </div>
+        </div><!-- End Stats Item -->
+
+        <div class="col-lg-3 col-6">
+          <div id="hours" class="stats-item text-center w-100 h-100">
+            <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="0" class="purecounter"></span>
+            <p>Per hour</p>
+          </div>
+        </div><!-- End Stats Item -->
+
+        <div class="col-lg-3 col-6">
+          <div id="days" class="stats-item text-center w-100 h-100">
+            <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter"></span>
+            <p>Per day</p>
+          </div>
+        </div><!-- End Stats Item -->
+
+        <div class="col-lg-3 col-6">
+          <div id="months" class="stats-item text-center w-100 h-100">
+            <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter"></span>
+            <p>Per month</p>
+          </div>
+        </div><!-- End Stats Item -->
+
+        <div class="col-lg-3 col-6">
+          <div id="article" class="stats-item text-center w-100 h-100">
+            <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter"></span>
+            <p>Hours needed to buy article</p>
+          </div>
+        </div><!-- End Stats Item -->
+
+        <div class="col-lg-3 col-6">
+          <div id="meeting" class="stats-item text-center w-100 h-100">
+            <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter"></span>
+            <p class="people">Funds needed for an hour meeting with </p>
+          </div>
+        </div><!-- End Stats Item -->
+
+        <div class="section pricing">
+          <div class="row">
+
+            <div class="row gy-4 pricing-item" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 d-flex align-items-center justify-content-center">
+                <h3 id="clock"></h3>
+              </div>
+              <div class="col-lg-3 d-flex align-items-center justify-content-center">
+                <h4><sup id="earnings"></sup> earned<span> at this moment</span></h4>
+              </div>
+              <div class="col-lg-3 d-flex align-items-center justify-content-center">
+                <ul>
+                  <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                  <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                  <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-3 d-flex align-items-center justify-content-center">
+                <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
+              </div>
+            </div><!-- End Pricing Item -->
+
+            <div class="clock" id="clock"></div>
+            <div class="earnings" id="earnings"></div>
+
+          </div>
         </div>
-      </div><!-- End Stats Item -->
 
-      <div class="col-lg-3 col-6">
-        <div id="minutes" class="stats-item text-center w-100 h-100">
-          <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="0" class="purecounter"></span>
-          <p>Per minute</p>
-        </div>
-      </div><!-- End Stats Item -->
-
-      <div class="col-lg-3 col-6">
-        <div id="hours" class="stats-item text-center w-100 h-100">
-          <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="0" class="purecounter"></span>
-          <p>Per hour</p>
-        </div>
-      </div><!-- End Stats Item -->
-
-      <div class="col-lg-3 col-6">
-        <div id="days" class="stats-item text-center w-100 h-100">
-          <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter"></span>
-          <p>Per day</p>
-        </div>
-      </div><!-- End Stats Item -->
-
-      <div class="col-lg-3 col-6">
-        <div id="months" class="stats-item text-center w-100 h-100">
-          <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter"></span>
-          <p>Per month</p>
-        </div>
-      </div><!-- End Stats Item -->
-
-      <div class="col-lg-3 col-6">
-        <div id="article" class="stats-item text-center w-100 h-100">
-          <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter"></span>
-          <p>Hours needed to buy article</p>
-        </div>
-      </div><!-- End Stats Item -->
-
-      <div class="col-lg-3 col-6">
-        <div id="meeting" class="stats-item text-center w-100 h-100">
-          <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter"></span>
-          <p class="people">Funds needed for an hour meeting with </p>
-        </div>
-      </div><!-- End Stats Item -->
-
-      <div class="col-lg-12 col-12">
-      <div class="section-title container p-1">
-      <br/>
-      <br/>
-      <h2 class="title">Quick Analysis <i class="bi bi-broadcast"></i></h2>
-      <p class="description">Results based on the amount introduced</p>
-      </div>
-    </div><!-- End Stats Item -->
-
-    <div class="col-lg-3 col-6">
-        <div id="meeting" class="stats-item text-center w-100 h-100">
-          <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter"></span>
-          <p class="people">Funds needed for an hour meeting with </p>
-        </div>
-      </div><!-- End Stats Item -->
-
-      </div>
-
-    </div>
-    </section>
-
-    <section>
-      <div class="clock-container">
-          <div class="clock" id="clock"></div>
-          <div class="earnings" id="earnings"></div>
       </div>
     </section>
 
