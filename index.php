@@ -7,15 +7,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculadora de Salario</title>
+  <title>Calculadora de Salario Neto</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="Calculadora de salario neto en base a salario bruto mensual">
+  <meta name="keywords" content="salario neto, salario bruto, costa rica">
+
+  <meta itemprop="name" content="Calculadora de Salario Neto">
+  <meta itemprop="description" content="Calculadora de salario neto en base a salario bruto mensual">
+  <meta itemprop="image" content="assets/img/favicon.png">
+  <link rel="canonical" href="https://salarycalculator.wuaze.com" />
+
+  <meta property="og:url" content="https://salarycalculator.wuaze.com">
+  <meta property="og:image" content="assets/img/favicon.png">
+  <meta property="og:description" content="Calculadora de salario neto en base a salario bruto mensual">
+  <meta property="og:title" content="Calculadora de Salario Neto">
+  <meta property="og:site_name" content="Calculadora de Salario Neto">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="https://salarycalculator.wuaze.com">
+  <meta name="twitter:title" content="Calculadora de Salario Neto">
+  <meta name="twitter:description" content="Calculadora de salario neto en base a salario bruto mensual">
+  <meta name="twitter:image" content="assets/img/favicon.png">
+
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -115,42 +132,42 @@
         <div class="col-lg-3 col-6">
           <div id="minutes" class="stats-item text-center w-100 h-100">
             <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="0" class="purecounter"></span>
-            <p>Per minute</p>
+            <p>Por minuto</p>
           </div>
         </div><!-- End Stats Item -->
 
         <div class="col-lg-3 col-6">
           <div id="hours" class="stats-item text-center w-100 h-100">
             <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="0" class="purecounter"></span>
-            <p>Per hour</p>
+            <p>Por hora</p>
           </div>
         </div><!-- End Stats Item -->
 
         <div class="col-lg-3 col-6">
           <div id="days" class="stats-item text-center w-100 h-100">
             <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter"></span>
-            <p>Per day</p>
+            <p>Por día</p>
           </div>
         </div><!-- End Stats Item -->
 
         <div class="col-lg-3 col-6">
           <div id="months" class="stats-item text-center w-100 h-100">
             <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter"></span>
-            <p>Per month</p>
+            <p>Por mes</p>
           </div>
         </div><!-- End Stats Item -->
 
         <div class="col-lg-3 col-6">
           <div id="article" class="stats-item text-center w-100 h-100">
             <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter"></span>
-            <p>Hours needed to buy article</p>
+            <p>Horas necesarias para comprar el articulo</p>
           </div>
         </div><!-- End Stats Item -->
 
         <div class="col-lg-3 col-6">
           <div id="meeting" class="stats-item text-center w-100 h-100">
             <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter"></span>
-            <p class="people">Funds needed for an hour meeting with </p>
+            <p class="people">Fondos necesarios para reunión de una hora</p>
           </div>
         </div><!-- End Stats Item -->
         <section id="alt-pricing" class="alt-pricing section">
@@ -161,13 +178,11 @@
                 <h3 id="clock"></h3>
               </div>
               <div class="col-lg-4 d-flex align-items-center justify-content-center">
-                <h4 id="earnings"><sup> / </sup><span>real time earnings</span></h4>
+                <h4 id="earnings"></h4>
               </div>
               <div class="col-lg-4 d-flex align-items-center justify-content-center">
                 <ul>
-                  <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                  <li><i class="bi bi-check"></i> <strong>Nec feugiat nisl pretium</strong></li>
-                  <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                  <li><i class="bi bi-check"></i> <span>Ganancias a tiempo real</span></li>
                 </ul>
               </div>
             </div><!-- End Pricing Item -->
@@ -177,13 +192,11 @@
                 <h3 id="clock2"></h3>
               </div>
               <div class="col-lg-4 d-flex align-items-center justify-content-center">
-                <h4 id="earnings2"><sup> / </sup><span> at X2 speed</span></h4>
+                <h4 id="earnings2"><sup></h4>
               </div>
               <div class="col-lg-4 d-flex align-items-center justify-content-center">
                 <ul>
-                  <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                  <li><i class="bi bi-check"></i> <strong>Nec feugiat nisl pretium</strong></li>
-                  <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                  <li><i class="bi bi-check"></i> <span>A dos veces el tiempo real</span></li>
                 </ul>
               </div>
             </div><!-- End Pricing Item -->
@@ -193,13 +206,11 @@
                 <h3 id="clock3"></h3>
               </div>
               <div class="col-lg-4 d-flex align-items-center justify-content-center">
-                <h4 id="earnings3"><sup> /</sup><span> at X5 speed</span></h4>
+                <h4 id="earnings3"></h4>
               </div>
               <div class="col-lg-4 d-flex align-items-center justify-content-center">
                 <ul>
-                  <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                  <li><i class="bi bi-check"></i> <strong>Nec feugiat nisl pretium</strong></li>
-                  <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                  <li><i class="bi bi-check"></i> <span>A cinco veces el tiempo real</span></li>
                 </ul>
               </div>
             </div><!-- End Pricing Item -->
