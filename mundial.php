@@ -42,16 +42,57 @@
 
             <h2 data-aos="fade-up">Your Lightning Fast Delivery Partner</h2>
             <p data-aos="fade-up" data-aos-delay="100">Facere distinctio molestiae nisi fugit tenetur repellat non praesentium nesciunt optio quis sit odio nemo quisquam. eius quos reiciendis eum vel eum voluptatem eum maiores eaque id optio ullam occaecati odio est possimus vel reprehenderit</p>
+
+            <div class="row mb-3">
+              <label class="form-label" for="currency">Selecciona la moneda:</label>
+              <select class="form-control" id="currency">
+                <option value="₡">Colón Costarricense (₡)</option>
+                <option value="$">Dólar Estadounidense ($)</option>
+                <option value="€">Euro (€)</option>
+                <option value="£">Libra Esterlina (£)</option>
+                <option value="¥">Yen Japonés (¥)</option>
+                <option value="₹">Rupia India (₹)</option>
+                <option value="₩">Won Surcoreano (₩)</option>
+                <option value="₺">Lira Turca (₺)</option>
+                <option value="₽">Rublo Ruso (₽)</option>
+                <option value="A$">Dólar Australiano (A$)</option>
+                <option value="C$">Dólar Canadiense (C$)</option>
+              </select>
+            </div>
+            <div class="row mb-3">
+              <label class="form-label" for="country">Selecciona tu país:</label>
+              <select class="form-control" id="country">
+                <option value="Costa Rica">Costa Rica</option>
+                <option value="Estados Unidos">Estados Unidos</option>
+                <option value="Europa">Europa</option>
+                <option value="Reino Unido">Reino Unido</option>
+                <option value="Japón">Japón</option>
+                <option value="India">India</option>
+                <option value="Corea del Sur">Corea del Sur</option>
+                <option value="Turquía">Turquía</option>
+                <option value="Rusia">Rusia</option>
+                <option value="Australia">Australia</option>
+                <option value="Canadá">Canadá</option>
+              </select>
+            </div>
             <div class="row mb-3">
               <label class="form-label" for="salary">Ingresa tu salario bruto mensual:</label>
               <input class="form-control" type="number" id="salary" placeholder="Salario mensual" min="0" />
+            </div>
+            <div class="row mb-3">
+              <label class="form-label" for="period">Selecciona el periodo:</label>
+              <select class="form-control" id="period">
+                <option value="monthly">Mensual</option>
+                <option value="weekly">Semanal</option>
+                <option value="biweekly">Quincenal</option>
+              </select>
             </div>
             <div class="row mb-3">
               <label class="form-label" for="price">Precio de lo que quieres comprar:</label>
               <input class="form-control" type="number" id="price" placeholder="Precio del artículo" min="0" />
             </div>
             <div class="row mb-3">
-              <label class="form-label" for="people">Número de personas en reunión planificada:</label>
+              <label class="form-label" for="people">Número de personas en la reunión:</label>
               <input class="form-control" type="number" id="people" placeholder="Número de personas" value="1" /> 
             </div>
             <div class="row mb-3">

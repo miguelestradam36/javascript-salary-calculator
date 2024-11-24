@@ -7,6 +7,36 @@ let totalSeconds = 0;
 let totalSecondsX2 = 0; 
 let totalSecondsX5 = 0; 
 
+const currencyCountryMap = {
+  "₡": "Costa Rica",
+  "$": "Estados Unidos",
+  "€": "Europa",
+  "£": "Reino Unido",
+  "¥": "Japón",
+  "₹": "India",
+  "₩": "Corea del Sur",
+  "₺": "Turquía",
+  "₽": "Rusia",
+  "A$": "Australia",
+  "C$": "Canadá",
+};
+
+document.getElementById("currency").addEventListener("change", function () {
+  const country = currencyCountryMap[this.value];
+  if (country) {
+    document.getElementById("country").value = country;
+  }
+});
+
+document.getElementById("country").addEventListener("change", function () {
+  const currency = Object.keys(currencyCountryMap).find(
+    (key) => currencyCountryMap[key] === this.value
+  );
+  if (currency) {
+    document.getElementById("currency").value = currency;
+  }
+});
+
 document.getElementById('result').style.display = 'none';
 
 function calculate() {
@@ -14,7 +44,7 @@ function calculate() {
   const salary = parseFloat(document.getElementById('salary').value);
   const deductionPercentage = 10.67 / 100 ;
   const period = document.getElementById('period').value;
-  const currencySymbol = '₡';
+  const currencySymbol = document.getElementById('currency').value;
   const price = parseFloat(document.getElementById('price').value) || 0;
   const numPeople = parseInt(document.getElementById('people').value) || 0;
 
