@@ -5,12 +5,15 @@ let totalEarnedX5 = 0;
 let previousSalary = null;
 let totalSeconds = 0;
 let totalSecondsX2 = 0; 
-let totalSecondsX5 = 0; 
+let totalSecondsX5 = 0;
+let totalinsurance= 0;
+let totaltaxes = 0;
 
 document.getElementById('result').style.display = 'none';
 
 function calculate() {
   document.getElementById('result').style.display = 'flex';
+  let taxrate = 0;
   const salary = parseFloat(document.getElementById('salary').value);
   const deductionPercentage = 10.67 / 100 ;
   const period = document.getElementById('period').value;
@@ -23,7 +26,22 @@ function calculate() {
     return;
   }
 
-  const netSalary = salary * (1 - deductionPercentage);
+  if (salary <= 929000){
+    taxrate = 0;
+  } else if (salary > 929000 && salary <= 1363000) {
+    taxrate = 10 / 100 ;
+  } else if (1363000 < salary && salary <= 2392000) {
+    taxrate = 15 / 100 ;
+  } else if (2392000 < salary && salary <= 4783000) {
+    taxrate = 20 / 100 ;
+  } else if (salary > 4783000) {
+    taxrate = 25 / 100;
+  }
+  
+  totaltaxes = salary * taxrate;
+  totalinsurance = salary * deductionPercentage;
+  const netSalary = salary - totaltaxes - totalinsurance;
+
   let perPeriod;
   switch (period) {
     case 'weekly':
