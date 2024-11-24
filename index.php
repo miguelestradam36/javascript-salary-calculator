@@ -40,8 +40,8 @@
         <div class="row gy-4 d-flex justify-content-between">
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
 
-            <h2 data-aos="fade-up">Your Lightning Fast Delivery Partner</h2>
-            <p data-aos="fade-up" data-aos-delay="100">Facere distinctio molestiae nisi fugit tenetur repellat non praesentium nesciunt optio quis sit odio nemo quisquam. eius quos reiciendis eum vel eum voluptatem eum maiores eaque id optio ullam occaecati odio est possimus vel reprehenderit</p>
+            <h2 data-aos="fade-up">Análisis de salario</h2>
+            <p data-aos="fade-up" data-aos-delay="100">Esta calculadora va a mostrar el ingreso neto de un empleado en base a su salario bruto mensual</p>
             <div class="row mb-3">
               <label class="form-label" for="salary">Ingresa tu salario bruto mensual:</label>
               <input class="form-control" type="number" id="salary" placeholder="Salario mensual" min="0" />
@@ -66,13 +66,13 @@
         </div>
       </div>
       <div id="result" class="row gy-4">
-
-        <div class="container section-title" data-aos="fade-up">
-          <span>Impuestos</span>
-          <h2 class="title">Impuestos</h2>
-          <p class="description">Resultados en base a la cantidad introducida</p>
-        </div><!-- End Section Title -->
+        <br/>
         <section id="alt-pricing" class="alt-pricing section">
+          <div class="container section-title" data-aos="fade-up">
+            <span>Impuestos</span>
+            <h2 class="title">Impuestos</h2>
+            <p class="description">Resultados en base a la cantidad introducida</p>
+          </div><!-- End Section Title -->
           <div class="container">
             <div class="row gy-4 pricing-item featured mt-4" data-aos="fade-up" data-aos-delay="200">
               <div class="col-lg-4 d-flex align-items-center justify-content-center">
@@ -86,30 +86,25 @@
               </div>
             </div><!-- End Pricing Item -->
             <div class="row gy-4 pricing-item" data-aos="fade-up" data-aos-delay="100">
-              <div class="col-lg-3 d-flex align-items-center justify-content-center">
+              <div class="col-lg-4 d-flex align-items-center justify-content-center">
                 <h3>Aporte de Impuesto a la Renta</h3>
               </div>
-              <div class="col-lg-3 d-flex align-items-center justify-content-center">
+              <div class="col-lg-6 d-flex align-items-center justify-content-center">
                 <h4><sup id="renta"></sup><span> / mes</span></h4>
               </div>
-              <div class="col-lg-3 d-flex align-items-center justify-content-center">
-                <ul>
-                  <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                  <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                  <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-3 d-flex align-items-center justify-content-center">
-                <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
+              <div class="col-lg-2 d-flex align-items-center justify-content-center">
+                <a><img class="img-fluid" src="assets/images/hacienda.svg" /></a>
               </div>
             </div><!-- End Pricing Item -->
           </div>
         </section>
+        
         <div class="container section-title" data-aos="fade-up">
           <span>Análisis sobre ingresos</span>
           <h2 class="title">Análisis sobre ingresos</h2>
           <p class="description">Resultados en base a la cantidad introducida</p>
         </div><!-- End Section Title -->
+
         <div class="col-lg-3 col-6">
           <div id="seconds" class="stats-item text-center w-100 h-100">
             <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="0" class="purecounter"></span>
