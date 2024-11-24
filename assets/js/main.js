@@ -90,6 +90,10 @@ function calculate() {
 function startClock(rate) {
   const clockElement = document.getElementById('clock');
   const earningsElement = document.getElementById('earnings');
+  const clock2Element = document.getElementById('clock2');
+  const earnings2Element = document.getElementById('earnings2');
+  const clock3Element = document.getElementById('clock3');
+  const earnings3Element = document.getElementById('earnings3');
 
   clockInterval = setInterval(() => {
     totalEarnedNormal += rate;
@@ -113,6 +117,10 @@ function startClock(rate) {
 
     clockElement.innerHTML = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
     earningsElement.innerHTML = `${currencySymbol}${totalEarnedNormal.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
+    clock2Element.innerHTML = `${hoursX2.toString().padStart(2, '0')}:${minutesX2.toString().padStart(2, '0')}:${secondsX2.toString().padStart(2, '0')}`;
+    earnings2Element.innerHTML = `${currencySymbol}${totalEarnedX2.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
+    clock3Element.innerHTML = `${hoursX5.toString().padStart(2, '0')}:${minutesX5.toString().padStart(2, '0')}:${secondsX5.toString().padStart(2, '0')}`;
+    earnings3Element.innerHTML = `${currencySymbol}${totalEarnedX5.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
   }, 1000);
 }
 

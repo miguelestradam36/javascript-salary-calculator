@@ -98,7 +98,7 @@
             </div><!-- End Pricing Item -->
           </div>
         </section>
-        
+
         <div class="container section-title" data-aos="fade-up">
           <span>Análisis sobre ingresos</span>
           <h2 class="title">Análisis sobre ingresos</h2>
@@ -155,12 +155,13 @@
         </div><!-- End Stats Item -->
         <section id="alt-pricing" class="alt-pricing section">
           <div class="container">
+
             <div class="row gy-4 pricing-item featured mt-4" data-aos="fade-up" data-aos-delay="200">
               <div class="col-lg-4 d-flex align-items-center justify-content-center">
                 <h3 id="clock"></h3>
               </div>
               <div class="col-lg-4 d-flex align-items-center justify-content-center">
-                <h4 id="earnings"><sup> /</sup><span>real time earnings</span></h4>
+                <h4 id="earnings"><sup> / </sup><span>real time earnings</span></h4>
               </div>
               <div class="col-lg-4 d-flex align-items-center justify-content-center">
                 <ul>
@@ -170,6 +171,39 @@
                 </ul>
               </div>
             </div><!-- End Pricing Item -->
+
+            <div class="row gy-4 pricing-item" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-4 d-flex align-items-center justify-content-center">
+                <h3 id="clock2"></h3>
+              </div>
+              <div class="col-lg-4 d-flex align-items-center justify-content-center">
+                <h4 id="earnings2"><sup> / </sup><span> at X2 speed</span></h4>
+              </div>
+              <div class="col-lg-4 d-flex align-items-center justify-content-center">
+                <ul>
+                  <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                  <li><i class="bi bi-check"></i> <strong>Nec feugiat nisl pretium</strong></li>
+                  <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                </ul>
+              </div>
+            </div><!-- End Pricing Item -->
+
+            <div class="row pricing-item featured" data-aos="fade-up" data-aos-delay="200">
+              <div class="col-lg-4 d-flex align-items-center justify-content-center">
+                <h3 id="clock3"></h3>
+              </div>
+              <div class="col-lg-4 d-flex align-items-center justify-content-center">
+                <h4 id="earnings3"><sup> /</sup><span> at X5 speed</span></h4>
+              </div>
+              <div class="col-lg-4 d-flex align-items-center justify-content-center">
+                <ul>
+                  <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                  <li><i class="bi bi-check"></i> <strong>Nec feugiat nisl pretium</strong></li>
+                  <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                </ul>
+              </div>
+            </div><!-- End Pricing Item -->
+            
           </div>
         </section>
 
