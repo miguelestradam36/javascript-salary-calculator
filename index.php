@@ -68,26 +68,35 @@
       <div id="result" class="row gy-4">
 
         <div class="container section-title" data-aos="fade-up">
-        <br/>
-        <br/>
-        <span>Quick Analysis<br></span>
-            <h2 class="title">Quick Analysis</h2>
-            <p class="description">Results based on the amount introduced</p>
+          <span>Impuestos</span>
+          <h2 class="title">Impuestos</h2>
+          <p class="description">Resultados en base a la cantidad introducida</p>
         </div><!-- End Section Title -->
         <section id="alt-pricing" class="alt-pricing section">
           <div class="container">
             <div class="row gy-4 pricing-item featured mt-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="col-lg-4 d-flex align-items-center justify-content-center">
+                <h3>Aporte Seguro Social</h3>
+              </div>
+              <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                <h4><sup id="ccss"></sup><span> / mes</span></h4>
+              </div>
+              <div class="col-lg-2 d-flex align-items-center justify-content-center">
+                <a><img class="img-fluid" src="assets/images/ccss.png" /></a>
+              </div>
+            </div><!-- End Pricing Item -->
+            <div class="row gy-4 pricing-item" data-aos="fade-up" data-aos-delay="100">
               <div class="col-lg-3 d-flex align-items-center justify-content-center">
-                <h3>Business Plan</h3>
+                <h3>Aporte de Impuesto a la Renta</h3>
               </div>
               <div class="col-lg-3 d-flex align-items-center justify-content-center">
-                <h4><sup>$</sup>29<span> / month</span></h4>
+                <h4><sup id="renta"></sup><span> / mes</span></h4>
               </div>
               <div class="col-lg-3 d-flex align-items-center justify-content-center">
                 <ul>
                   <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                  <li><i class="bi bi-check"></i> <strong>Nec feugiat nisl pretium</strong></li>
                   <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                  <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
                 </ul>
               </div>
               <div class="col-lg-3 d-flex align-items-center justify-content-center">
@@ -96,10 +105,15 @@
             </div><!-- End Pricing Item -->
           </div>
         </section>
+        <div class="container section-title" data-aos="fade-up">
+          <span>Análisis sobre ingresos</span>
+          <h2 class="title">Análisis sobre ingresos</h2>
+          <p class="description">Resultados en base a la cantidad introducida</p>
+        </div><!-- End Section Title -->
         <div class="col-lg-3 col-6">
           <div id="seconds" class="stats-item text-center w-100 h-100">
             <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="0" class="purecounter"></span>
-            <p>Per second</p>
+            <p>Por segundo</p>
           </div>
         </div><!-- End Stats Item -->
 
@@ -147,21 +161,18 @@
         <section id="alt-pricing" class="alt-pricing section">
           <div class="container">
             <div class="row gy-4 pricing-item featured mt-4" data-aos="fade-up" data-aos-delay="200">
-              <div class="col-lg-3 d-flex align-items-center justify-content-center">
+              <div class="col-lg-4 d-flex align-items-center justify-content-center">
                 <h3 id="clock"></h3>
               </div>
-              <div class="col-lg-3 d-flex align-items-center justify-content-center">
-                <h4 id="earnings"></h4>
+              <div class="col-lg-4 d-flex align-items-center justify-content-center">
+                <h4 id="earnings"><sup> /</sup><span>real time earnings</span></h4>
               </div>
-              <div class="col-lg-3 d-flex align-items-center justify-content-center">
+              <div class="col-lg-4 d-flex align-items-center justify-content-center">
                 <ul>
                   <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
                   <li><i class="bi bi-check"></i> <strong>Nec feugiat nisl pretium</strong></li>
                   <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
                 </ul>
-              </div>
-              <div class="col-lg-3 d-flex align-items-center justify-content-center">
-                <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
               </div>
             </div><!-- End Pricing Item -->
           </div>

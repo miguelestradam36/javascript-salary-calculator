@@ -14,6 +14,7 @@ document.getElementById('result').style.display = 'none';
 
 function calculate() {
   document.getElementById('result').style.display = 'flex';
+  const InsuranceElement = document.getElementById('ccss')
   let taxrate = 0;
   const salary = parseFloat(document.getElementById('salary').value);
   const deductionPercentage = 10.67 / 100 ;
@@ -47,7 +48,7 @@ function calculate() {
   const perDay = hourlyRate * 24;
 
   const meetingCost = hourlyRate * numPeople; 
-
+  InsuranceElement.textContent =  `${currencySymbol}${totalinsurance}`;
   document.getElementById('seconds').getElementsByClassName("purecounter")[0].textContent = `${currencySymbol}${perSecond.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
   document.getElementById('minutes').getElementsByClassName("purecounter")[0].textContent = `${currencySymbol}${perMinute.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
   document.getElementById('hours').getElementsByClassName("purecounter")[0].textContent = `${currencySymbol}${hourlyRate.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
