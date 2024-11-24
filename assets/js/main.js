@@ -8,6 +8,7 @@ let totalSecondsX2 = 0;
 let totalSecondsX5 = 0;
 let totalinsurance= 0;
 let totaltaxes = 0;
+const currencySymbol = '₡';
 
 document.getElementById('result').style.display = 'none';
 
@@ -16,8 +17,6 @@ function calculate() {
   let taxrate = 0;
   const salary = parseFloat(document.getElementById('salary').value);
   const deductionPercentage = 10.67 / 100 ;
-  const period = document.getElementById('period').value;
-  const currencySymbol = '₡';
   const price = parseFloat(document.getElementById('price').value) || 0;
   const numPeople = parseInt(document.getElementById('people').value) || 0;
 
@@ -37,24 +36,10 @@ function calculate() {
   } else if (salary > 4783000) {
     taxrate = 25 / 100;
   }
-  
+
   totaltaxes = salary * taxrate;
   totalinsurance = salary * deductionPercentage;
-  const netSalary = salary - totaltaxes - totalinsurance;
-
-  let perPeriod;
-  switch (period) {
-    case 'weekly':
-      perPeriod = netSalary / 4;
-      break;
-    case 'biweekly':
-      perPeriod = netSalary / 2;
-      break;
-    case 'monthly':
-    default:
-      perPeriod = netSalary;
-      break;
-  }
+  const netSalary = salary - (totaltaxes + totalinsurance);
 
   const hourlyRate = netSalary / (30 * 24);
   const perSecond = hourlyRate / 3600;
@@ -63,27 +48,26 @@ function calculate() {
 
   const meetingCost = hourlyRate * numPeople; 
 
-  document.getElementById('seconds').getElementsByClassName("purecounter")[0].textContent = `${currencySymbol}${perSecond.toLocaleString(undefined, {minimumFractionDigits: 2})}`;
-  document.getElementById('minutes').getElementsByClassName("purecounter")[0].textContent = `${currencySymbol}${perMinute.toLocaleString(undefined, {minimumFractionDigits: 2})}`;
-  document.getElementById('hours').getElementsByClassName("purecounter")[0].textContent = `${currencySymbol}${hourlyRate.toLocaleString(undefined, {minimumFractionDigits: 2})}`;
-  document.getElementById('days').getElementsByClassName("purecounter")[0].textContent = `${currencySymbol}${perDay.toLocaleString(undefined, {minimumFractionDigits: 2})}`;
-  document.getElementById('months').getElementsByClassName("purecounter")[0].textContent = `${currencySymbol}${perPeriod.toLocaleString(undefined, {minimumFractionDigits: 2})}`;
+  document.getElementById('seconds').getElementsByClassName("purecounter")[0].textContent = `${currencySymbol}${perSecond.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
+  document.getElementById('minutes').getElementsByClassName("purecounter")[0].textContent = `${currencySymbol}${perMinute.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
+  document.getElementById('hours').getElementsByClassName("purecounter")[0].textContent = `${currencySymbol}${hourlyRate.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
+  document.getElementById('days').getElementsByClassName("purecounter")[0].textContent = `${currencySymbol}${perDay.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
+  document.getElementById('months').getElementsByClassName("purecounter")[0].textContent = `${currencySymbol}${netSalary}`;
 
   if (price > 0) {
       const totalHoursToBuy = price / hourlyRate;
-      document.getElementById('article').getElementsByClassName("purecounter")[0].textContent = `${totalHoursToBuy.toFixed(2)}`;
+      document.getElementById('article').getElementsByClassName("purecounter")[0].textContent = `${totalHoursToBuy.toFixed(1)}`;
   } else {
       document.getElementById('article').getElementsByClassName("purecounter")[0].textContent = `N/A`;
   }
 
   if (numPeople === 0) { 
-      var text = document.createTextNode(`${numPeople} person present`);
-      document.getElementById('meeting').getElementsByClassName("people")[0].appendChild(text);
-      document.getElementById('meeting').getElementsByClassName("purecounter")[0].textContent += `N/A`;
+      document.getElementById('meeting').getElementsByClassName("people")[0].textContent = "Not planning to have a meeting";
+      document.getElementById('meeting').getElementsByClassName("purecounter")[0].textContent = `N/A`;
   } else {
       var text = document.createTextNode(`${numPeople} person present`);
-      document.getElementById('meeting').getElementsByClassName("people")[0].appendChild(text);
-      document.getElementById('meeting').getElementsByClassName("purecounter")[0].textContent += `${currencySymbol}${meetingCost.toLocaleString(undefined, {minimumFractionDigits: 2})}`;
+      document.getElementById('meeting').getElementsByClassName("people")[0].textContent = `Funds needed for an hour meeting with ${numPeople} person/people present`;
+      document.getElementById('meeting').getElementsByClassName("purecounter")[0].textContent = `${currencySymbol}${meetingCost.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
   }
 
   if (previousSalary !== salary) {
@@ -125,7 +109,7 @@ function startClock(rate) {
     const secondsX5 = totalSecondsX5 % 60; 
 
     clockElement.innerHTML = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-    earningsElement.innerHTML = `${document.getElementById('currency').value}${totalEarnedNormal.toLocaleString(undefined, {minimumFractionDigits: 2})}`;
+    earningsElement.innerHTML = `${currencySymbol}${totalEarnedNormal.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
   }, 1000);
 }
 
@@ -136,6 +120,8 @@ function clearFields() {
   document.getElementById('result').innerHTML = '';
   document.getElementById('clock').innerHTML = '';
   document.getElementById('earnings').innerHTML = ''; 
+  document.getElementById('meeting').getElementsByClassName("purecounter")[0].textContent = ''; 
+  document.getElementById('article').getElementsByClassName("purecounter")[0].textContent = ''; 
   clearInterval(clockInterval);
   totalEarnedNormal = 0;
   totalEarnedX2 = 0;

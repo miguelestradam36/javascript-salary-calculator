@@ -74,7 +74,28 @@
             <h2 class="title">Quick Analysis</h2>
             <p class="description">Results based on the amount introduced</p>
         </div><!-- End Section Title -->
-
+        <section id="alt-pricing" class="alt-pricing section">
+          <div class="container">
+            <div class="row gy-4 pricing-item featured mt-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="col-lg-3 d-flex align-items-center justify-content-center">
+                <h3>Business Plan</h3>
+              </div>
+              <div class="col-lg-3 d-flex align-items-center justify-content-center">
+                <h4><sup>$</sup>29<span> / month</span></h4>
+              </div>
+              <div class="col-lg-3 d-flex align-items-center justify-content-center">
+                <ul>
+                  <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                  <li><i class="bi bi-check"></i> <strong>Nec feugiat nisl pretium</strong></li>
+                  <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-3 d-flex align-items-center justify-content-center">
+                <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
+              </div>
+            </div><!-- End Pricing Item -->
+          </div>
+        </section>
         <div class="col-lg-3 col-6">
           <div id="seconds" class="stats-item text-center w-100 h-100">
             <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="0" class="purecounter"></span>
@@ -123,27 +144,28 @@
             <p class="people">Funds needed for an hour meeting with </p>
           </div>
         </div><!-- End Stats Item -->
-
-        <div class="section pricing">
-          <div class="row">
-
-            <div class="row gy-4 pricing-item" data-aos="fade-up" data-aos-delay="100">
-              <div class="col-lg-4 d-flex align-items-center justify-content-center">
+        <section id="alt-pricing" class="alt-pricing section">
+          <div class="container">
+            <div class="row gy-4 pricing-item featured mt-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="col-lg-3 d-flex align-items-center justify-content-center">
                 <h3 id="clock"></h3>
               </div>
-              <div class="col-lg-4 d-flex align-items-center justify-content-center">
-                <h4><sup id="earnings"></sup> earned<span> at this moment</span></h4>
+              <div class="col-lg-3 d-flex align-items-center justify-content-center">
+                <h4 id="earnings"></h4>
               </div>
-              <div class="col-lg-4 d-flex align-items-center justify-content-center">
+              <div class="col-lg-3 d-flex align-items-center justify-content-center">
                 <ul>
-                  <li><i class="bi bi-check"></i> <span>Based on your net salary</span></li>
-                  <li><i class="bi bi-check"></i> <span>We are not keeping your information</span></li>
+                  <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                  <li><i class="bi bi-check"></i> <strong>Nec feugiat nisl pretium</strong></li>
+                  <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
                 </ul>
               </div>
+              <div class="col-lg-3 d-flex align-items-center justify-content-center">
+                <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
+              </div>
             </div><!-- End Pricing Item -->
-
           </div>
-        </div>
+        </section>
 
       </div>
     </section>
