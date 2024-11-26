@@ -45,6 +45,12 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Google Ads Script -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7712765517917992"
+     crossorigin="anonymous"></script>
+
+
 </head>
 <body>
   <main>
@@ -153,7 +159,7 @@
         <div class="col-lg-3 col-6">
           <div id="months" class="stats-item text-center w-100 h-100">
             <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter"></span>
-            <p>Por mes</p>
+            <p>Salario neto por mes</p>
           </div>
         </div><!-- End Stats Item -->
 
