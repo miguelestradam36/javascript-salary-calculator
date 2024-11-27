@@ -205,9 +205,12 @@
                 <h4 id="clock"></h4>
               </div>
               <div class="col-lg-6 d-flex align-items-center justify-content-center">
-                <h4 id="earnings"></h4>
+                <h4><sup id="earnings"></sup><span> / en base al salario neto</span></h4>
               </div>
               <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                <h4><sup id="brutoearnings"></sup><span> / en base al salario bruto</span></h4>
+              </div>
+              <div class="col-lg-12 d-flex align-items-center justify-content-center">
                 <ul>
                   <li><i class="bi bi-clock-fill"></i> <span> &nbsp;Ganancias en tiempo real</span></li>
                 </ul>
@@ -219,9 +222,12 @@
                 <h4 id="clock2"></h4>
               </div>
               <div class="col-lg-6 d-flex align-items-center justify-content-center">
-                <h4 id="earnings2"></h4>
+                <h4><sup id="earnings2"></sup><span> / en base al salario neto</span></h4>
               </div>
               <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                <h4><sup id="brutoearnings2"></sup><span> / en base al salario bruto</span></h4>
+              </div>
+              <div class="col-lg-12 d-flex align-items-center justify-content-center">
                 <ul>
                   <li><i class="bi bi-clock-fill"></i> <span> &nbsp;Ganancias a dos veces el tiempo real</span></li>
                 </ul>
@@ -233,9 +239,12 @@
                 <h4 id="clock3"><span></span></h4>
               </div>
               <div class="col-lg-6 d-flex align-items-center justify-content-center">
-                <h4 id="earnings3"></h4>
+                <h4><sup id="earnings3"></sup><span> / en base al salario neto</span></h4>
               </div>
               <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                <h4><sup id="brutoearnings3"></sup><span> / en base al salario bruto</span></h4>
+              </div>
+              <div class="col-lg-12 d-flex align-items-center justify-content-center">
                 <ul>
                   <li><i class="bi bi-clock-fill"></i> <span> &nbsp;Ganancias a cinco veces el tiempo real</span></li>
                 </ul>
