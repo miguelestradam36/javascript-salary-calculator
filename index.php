@@ -157,13 +157,6 @@
         </div><!-- End Stats Item -->
 
         <div class="col-lg-3 col-6">
-          <div id="months" class="stats-item text-center w-100 h-100">
-            <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter"></span>
-            <p>Salario neto por mes</p>
-          </div>
-        </div><!-- End Stats Item -->
-
-        <div class="col-lg-3 col-6">
           <div id="article" class="stats-item text-center w-100 h-100">
             <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter"></span>
             <p>Horas necesarias para comprar el articulo</p>
@@ -176,47 +169,75 @@
             <p class="people">Fondos necesarios para reunión de una hora</p>
           </div>
         </div><!-- End Stats Item -->
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="pricing section">
+          <div class="container p-1">
+            <div class="row gy-4">
+              <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+                <div class="pricing-item">
+                  <h3> <i class="bi bi-cash"></i> Salario Bruto</h3>
+                  <h4 id="raw"></h4>
+                  <ul>
+                    <li><i class="bi bi-buildings-fill"></i> <span>Salario bruto mensual acordado con el patrono</span></li>
+                  </ul>
+                </div>
+              </div><!-- End Pricing Item -->
+
+              <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+                <div class="pricing-item featured">
+                  <h3> <i class="bi bi-cash"></i> Salario Neto</h3>
+                  <h4 id="months"></h4>
+                  <ul>
+                    <li><i class="bi bi-buildings-fill"></i> <span>Aporte del 10.67% al seguro social</span></li>
+                    <li><i class="bi bi-buildings-fill"></i> <span>Aporte de impuestos a la renta considerado en base al salario bruto</span></li>
+                  </ul>
+                </div>
+              </div><!-- End Pricing Item -->
+            </div>
+          </div>
+        </section><!-- /Pricing Section -->
         <section id="alt-pricing" class="alt-pricing section">
           <div class="container">
 
             <div class="row gy-4 pricing-item featured mt-4" data-aos="fade-up" data-aos-delay="200">
-              <div class="col-lg-4 d-flex align-items-center justify-content-center">
-                <h3 id="clock"></h3>
+              <div class="col-lg-12 d-flex align-items-center justify-content-center">
+                <h4 id="clock"></h4>
               </div>
-              <div class="col-lg-4 d-flex align-items-center justify-content-center">
+              <div class="col-lg-6 d-flex align-items-center justify-content-center">
                 <h4 id="earnings"></h4>
               </div>
-              <div class="col-lg-4 d-flex align-items-center justify-content-center">
+              <div class="col-lg-6 d-flex align-items-center justify-content-center">
                 <ul>
-                  <li><i class="bi bi-check"></i> <span>Ganancias a tiempo real</span></li>
+                  <li><i class="bi bi-clock-fill"></i> <span>Ganancias en tiempo real</span></li>
                 </ul>
               </div>
             </div><!-- End Pricing Item -->
 
             <div class="row gy-4 pricing-item" data-aos="fade-up" data-aos-delay="100">
-              <div class="col-lg-4 d-flex align-items-center justify-content-center">
-                <h3 id="clock2"></h3>
+              <div class="col-lg-12 d-flex align-items-center justify-content-center">
+                <h4 id="clock2"></h4>
               </div>
-              <div class="col-lg-4 d-flex align-items-center justify-content-center">
-                <h4 id="earnings2"><sup></h4>
+              <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                <h4 id="earnings2"></h4>
               </div>
-              <div class="col-lg-4 d-flex align-items-center justify-content-center">
+              <div class="col-lg-6 d-flex align-items-center justify-content-center">
                 <ul>
-                  <li><i class="bi bi-check"></i> <span>A dos veces el tiempo real</span></li>
+                  <li><i class="bi bi-clock-fill"></i> <span>Ganancias a dos veces el tiempo real</span></li>
                 </ul>
               </div>
             </div><!-- End Pricing Item -->
 
             <div class="row pricing-item featured" data-aos="fade-up" data-aos-delay="200">
-              <div class="col-lg-4 d-flex align-items-center justify-content-center">
-                <h3 id="clock3"></h3>
+              <div class="col-lg-12 d-flex align-items-center justify-content-center">
+                <h4 id="clock3"><span></span></h4>
               </div>
-              <div class="col-lg-4 d-flex align-items-center justify-content-center">
+              <div class="col-lg-6 d-flex align-items-center justify-content-center">
                 <h4 id="earnings3"></h4>
               </div>
-              <div class="col-lg-4 d-flex align-items-center justify-content-center">
+              <div class="col-lg-6 d-flex align-items-center justify-content-center">
                 <ul>
-                  <li><i class="bi bi-check"></i> <span>A cinco veces el tiempo real</span></li>
+                  <li><i class="bi bi-clock-fill"></i> <span>Ganancias a cinco veces el tiempo real</span></li>
                 </ul>
               </div>
             </div><!-- End Pricing Item -->

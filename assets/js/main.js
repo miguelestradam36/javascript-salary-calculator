@@ -55,7 +55,9 @@ function calculate() {
   document.getElementById('minutes').getElementsByClassName("purecounter")[0].textContent = `${currencySymbol}${perMinute.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
   document.getElementById('hours').getElementsByClassName("purecounter")[0].textContent = `${currencySymbol}${hourlyRate.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
   document.getElementById('days').getElementsByClassName("purecounter")[0].textContent = `${currencySymbol}${perDay.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
-  document.getElementById('months').getElementsByClassName("purecounter")[0].textContent = `${currencySymbol}${netSalary}`;
+
+  document.getElementById('raw').textContent = `${currencySymbol}${salary}`;
+  document.getElementById('months').textContent = `${currencySymbol}${netSalary}`;
 
   if (price > 0) {
       const totalHoursToBuy = price / hourlyRate;
