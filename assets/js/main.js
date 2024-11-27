@@ -52,11 +52,12 @@ function calculate() {
   const netSalary = salary - (totaltaxes + totalinsurance);
 
   const hourlyRate = netSalary / (30 * 24);
-  const brutohourlyRate = salary / (30 *24);
   const perSecond = hourlyRate / 3600;
-  const brutoperSecond = salary / (30 *24);
   const perMinute = hourlyRate / 60;
   const perDay = hourlyRate * 24;
+
+  const brutohourlyRate = salary / (30 *24);
+  const brutoperSecond = brutohourlyRate / 3600;
 
   const meetingCost = hourlyRate * numPeople; 
 
