@@ -6,6 +6,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="google-adsense-account" content="ca-pub-7712765517917992">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora de Salario Neto</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
