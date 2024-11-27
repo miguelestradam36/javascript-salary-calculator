@@ -15,24 +15,24 @@
 
   <meta itemprop="name" content="Calculadora de Salario Neto">
   <meta itemprop="description" content="Calculadora de salario neto en base a salario bruto mensual">
-  <meta itemprop="image" content="assets/img/favicon.png">
-  <link rel="canonical" href="https://salarycalculator.wuaze.com" />
+  <meta itemprop="image" content="assets/images/favicon.png">
+  <link rel="canonical" href="https://valordeltiempo.com" />
 
-  <meta property="og:url" content="https://salarycalculator.wuaze.com">
-  <meta property="og:image" content="assets/img/favicon.png">
+  <meta property="og:url" content="https://valordeltiempo.com">
+  <meta property="og:image" content="assets/images/favicon.png">
   <meta property="og:description" content="Calculadora de salario neto en base a salario bruto mensual">
   <meta property="og:title" content="Calculadora de Salario Neto">
   <meta property="og:site_name" content="Calculadora de Salario Neto">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:url" content="https://salarycalculator.wuaze.com">
+  <meta name="twitter:url" content="https://valordeltiempo.com">
   <meta name="twitter:title" content="Calculadora de Salario Neto">
   <meta name="twitter:description" content="Calculadora de salario neto en base a salario bruto mensual">
-  <meta name="twitter:image" content="assets/img/favicon.png">
+  <meta name="twitter:image" content="assets/images/favicon.png">
 
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/images/favicon.png" rel="icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
