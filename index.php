@@ -159,14 +159,14 @@
         <div class="col-lg-3 col-6">
           <div id="article" class="stats-item text-center w-100 h-100">
             <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter"></span>
-            <p>Horas necesarias para comprar el articulo</p>
+            <p>Horas necesarias para comprar el artículo</p>
           </div>
         </div><!-- End Stats Item -->
 
         <div class="col-lg-3 col-6">
           <div id="meeting" class="stats-item text-center w-100 h-100">
             <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter"></span>
-            <p class="people">Fondos necesarios para reunión de una hora</p>
+            <p class="people"></p>
           </div>
         </div><!-- End Stats Item -->
 
@@ -176,21 +176,21 @@
             <div class="row gy-4">
               <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
                 <div class="pricing-item">
-                  <h3> <i class="bi bi-cash"></i> Salario Bruto</h3>
+                  <h3> <i class="bi bi-cash"></i> &nbsp; Salario Bruto</h3>
                   <h4 id="raw"></h4>
                   <ul>
-                    <li><i class="bi bi-buildings-fill"></i> <span>Salario bruto mensual acordado con el patrono</span></li>
+                    <li><i class="bi bi-buildings-fill"></i> <span> &nbsp;Salario bruto mensual acordado con el patrono</span></li>
                   </ul>
                 </div>
               </div><!-- End Pricing Item -->
 
               <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
                 <div class="pricing-item featured">
-                  <h3> <i class="bi bi-cash"></i> Salario Neto</h3>
+                  <h3> <i class="bi bi-cash"></i> &nbsp; Salario Neto</h3>
                   <h4 id="months"></h4>
                   <ul>
-                    <li><i class="bi bi-buildings-fill"></i> <span>Aporte del 10.67% al seguro social</span></li>
-                    <li><i class="bi bi-buildings-fill"></i> <span>Aporte de impuestos a la renta considerado en base al salario bruto</span></li>
+                    <li><i class="bi bi-buildings-fill"></i> <span> &nbsp;Aporte del 10.67% al seguro social</span></li>
+                    <li><i class="bi bi-buildings-fill"></i> <span> &nbsp;Aporte de impuestos a la renta considerado en base al salario mensual</span></li>
                   </ul>
                 </div>
               </div><!-- End Pricing Item -->
@@ -209,7 +209,7 @@
               </div>
               <div class="col-lg-6 d-flex align-items-center justify-content-center">
                 <ul>
-                  <li><i class="bi bi-clock-fill"></i> <span>Ganancias en tiempo real</span></li>
+                  <li><i class="bi bi-clock-fill"></i> <span> &nbsp;Ganancias en tiempo real</span></li>
                 </ul>
               </div>
             </div><!-- End Pricing Item -->
@@ -223,7 +223,7 @@
               </div>
               <div class="col-lg-6 d-flex align-items-center justify-content-center">
                 <ul>
-                  <li><i class="bi bi-clock-fill"></i> <span>Ganancias a dos veces el tiempo real</span></li>
+                  <li><i class="bi bi-clock-fill"></i> <span> &nbsp;Ganancias a dos veces el tiempo real</span></li>
                 </ul>
               </div>
             </div><!-- End Pricing Item -->
@@ -237,7 +237,7 @@
               </div>
               <div class="col-lg-6 d-flex align-items-center justify-content-center">
                 <ul>
-                  <li><i class="bi bi-clock-fill"></i> <span>Ganancias a cinco veces el tiempo real</span></li>
+                  <li><i class="bi bi-clock-fill"></i> <span> &nbsp;Ganancias a cinco veces el tiempo real</span></li>
                 </ul>
               </div>
             </div><!-- End Pricing Item -->

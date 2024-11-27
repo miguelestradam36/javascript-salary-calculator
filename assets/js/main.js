@@ -67,11 +67,11 @@ function calculate() {
   }
 
   if (numPeople === 0) { 
-      document.getElementById('meeting').getElementsByClassName("people")[0].textContent = "Not planning to have a meeting";
+      document.getElementById('meeting').getElementsByClassName("people")[0].textContent = "No planeo tener una reunión";
       document.getElementById('meeting').getElementsByClassName("purecounter")[0].textContent = `N/A`;
   } else {
       var text = document.createTextNode(`${numPeople} person present`);
-      document.getElementById('meeting').getElementsByClassName("people")[0].textContent = `Funds needed for an hour meeting with ${numPeople} person/people present`;
+      document.getElementById('meeting').getElementsByClassName("people")[0].textContent = `Fondos necesarios para una reunión de ${numPeople} personas presentes`;
       document.getElementById('meeting').getElementsByClassName("purecounter")[0].textContent = `${currencySymbol}${meetingCost.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
   }
 
