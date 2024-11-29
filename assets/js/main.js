@@ -30,7 +30,7 @@ function calculate() {
   const InsuranceElement = document.getElementById('ccss');
   const TaxesElement = document.getElementById('renta');
   let taxrate = 0;
-  const salary = parseFloat(document.getElementById('salary').value);
+  let salary = parseFloat(document.getElementById('salary').value);
   const deductionPercentage = 10.67 / 100 ;
   const price = parseFloat(document.getElementById('price').value) || 0;
   const numPeople = parseInt(document.getElementById('people').value) || 0;
@@ -54,17 +54,33 @@ function calculate() {
 
   totaltaxes = salary * taxrate;
   totalinsurance = salary * deductionPercentage;
-  const netSalary = salary - (totaltaxes + totalinsurance);
+  let netSalary = salary - (totaltaxes + totalinsurance);
 
-  const hourlyRate = netSalary / (30 * 24);
-  const perSecond = hourlyRate / 3600;
-  const perMinute = hourlyRate / 60;
-  const perDay = hourlyRate * 24;
+  let hourlyRate = netSalary / (30 * 24);
+  let perSecond = hourlyRate / 3600;
+  let perMinute = hourlyRate / 60;
+  let perDay = hourlyRate * 24;
 
-  const brutohourlyRate = salary / (30 *24);
-  const brutoperSecond = brutohourlyRate / 3600;
+  let brutohourlyRate = salary / (30 *24);
+  let brutoperSecond = brutohourlyRate / 3600;
 
-  const meetingCost = hourlyRate * numPeople; 
+  let meetingCost = hourlyRate * numPeople; 
+
+  meetingCost = parseFloat(meetingCost.toFixed(2));
+
+  totaltaxes = parseFloat(totaltaxes.toFixed(2));
+  totalinsurance = parseFloat(totalinsurance.toFixed(2));
+  netSalary = parseFloat(netSalary.toFixed(2));
+
+  brutohourlyRate = parseFloat(brutohourlyRate.toFixed(2));
+  brutoperSecond = parseFloat(brutoperSecond.toFixed(2));
+
+  perMinute = parseFloat(perMinute.toFixed(2));
+  hourlyRate = parseFloat(hourlyRate.toFixed(2));
+  perSecond = parseFloat(perSecond.toFixed(2));
+  perDay = parseFloat(perDay.toFixed(2));
+
+  salary = parseFloat(salary.toFixed(2));
 
   InsuranceElement.textContent =  `${currencySymbol}${totalinsurance}`;
   TaxesElement.textContent =  `${currencySymbol}${totaltaxes}`;
@@ -104,7 +120,7 @@ function calculate() {
     totalSecondsX2 = 0; 
     totalSecondsX5 = 0; 
     clearInterval(clockInterval);
-    startClock(perSecond, brutoperSecond);
+    startClock(parseFloat(perSecond), parseFloat(brutoperSecond));
   }
 
   previousSalary = salary;
