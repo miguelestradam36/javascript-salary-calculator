@@ -68,8 +68,6 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1 class="sitename">Logis</h1>
       </a>
 
@@ -79,23 +77,6 @@
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="pricing.html">Pricing</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -141,6 +122,7 @@
         </div>
       </div>
     </section>
+
       <div id="result" class="row gy-4">
         <br/>
         <section id="alt-pricing" class="alt-pricing section">
@@ -175,54 +157,15 @@
           </div>
         </section>
 
+        <!-- Stats section -->
         <div class="container section-title" data-aos="fade-up">
           <span>Análisis sobre ingresos</span>
           <h2 class="title">Análisis sobre ingresos</h2>
           <p class="description">Resultados en base a la cantidad introducida</p>
         </div><!-- End Section Title -->
-
-        <div class="col-lg-3 col-6">
-          <div id="seconds" class="stats-item text-center w-100 h-100">
-            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="0" class="purecounter"></span>
-            <p>Por segundo</p>
-          </div>
-        </div><!-- End Stats Item -->
-
-        <div class="col-lg-3 col-6">
-          <div id="minutes" class="stats-item text-center w-100 h-100">
-            <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="0" class="purecounter"></span>
-            <p>Por minuto</p>
-          </div>
-        </div><!-- End Stats Item -->
-
-        <div class="col-lg-3 col-6">
-          <div id="hours" class="stats-item text-center w-100 h-100">
-            <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="0" class="purecounter"></span>
-            <p>Por hora</p>
-          </div>
-        </div><!-- End Stats Item -->
-
-        <div class="col-lg-3 col-6">
-          <div id="days" class="stats-item text-center w-100 h-100">
-            <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter"></span>
-            <p>Por día</p>
-          </div>
-        </div><!-- End Stats Item -->
-
-        <div class="col-lg-3 col-6">
-          <div id="article" class="stats-item text-center w-100 h-100">
-            <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter"></span>
-            <p>Horas necesarias para comprar el artículo</p>
-          </div>
-        </div><!-- End Stats Item -->
-
-        <div class="col-lg-3 col-6">
-          <div id="meeting" class="stats-item text-center w-100 h-100">
-            <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter"></span>
-            <p class="people"></p>
-          </div>
-        </div><!-- End Stats Item -->
-
+        
+        <!-- Stats section finish -->
+         
         <!-- Pricing Section -->
         <section id="pricing" class="pricing section">
           <div class="container p-1">
