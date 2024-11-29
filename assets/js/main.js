@@ -56,12 +56,12 @@ function calculate() {
   totalinsurance = salary * deductionPercentage;
   let netSalary = salary - (totaltaxes + totalinsurance);
 
-  let hourlyRate = netSalary / (200);
+  let hourlyRate = netSalary / 176;
   let perSecond = hourlyRate / 3600;
   let perMinute = hourlyRate / 60;
-  let perDay = hourlyRate * 24;
+  let perDay = hourlyRate * 9;
 
-  let brutohourlyRate = salary / (30 *24);
+  let brutohourlyRate = salary / 176;
   let brutoperSecond = brutohourlyRate / 3600;
 
   let meetingCost = hourlyRate * numPeople; 
@@ -104,8 +104,7 @@ function calculate() {
       document.getElementById('peopleresult').textContent = "No planeo tener una reunión";
       document.getElementById('meeting').innerHTML = `N/A`;
   } else {
-      var text = document.createTextNode(`${numPeople} person present`);
-      document.getElementById('peopleresult').textContent = `Fondos necesarios para una reunión de ${numPeople} personas presentes`;
+      document.getElementById('peopleresult').textContent = `Fondos necesarios para una reunión de 1 hora con ${numPeople} personas presentes`;
       document.getElementById('meeting').innerHTML  = `${currencySymbol}${meetingCost.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
   }
 
