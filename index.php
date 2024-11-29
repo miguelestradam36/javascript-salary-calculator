@@ -68,7 +68,7 @@
             <p data-aos="fade-up" data-aos-delay="100">Esta calculadora va a mostrar el ingreso neto de un empleado en base a su salario bruto mensual</p>
             <div class="row mb-3">
               <label class="form-label" for="salary">Ingresa tu salario bruto mensual:</label>
-              <input class="form-control" type="number" id="salary" placeholder="Salario mensual" min="0" />
+              <input class="form-control" type="number" id="salary" placeholder="Salario mensual" min="0" pattern="^(?=.)(\d{1,3}(,\d{3})*)?(\.\d+)?$" required/>
             </div>
             <div class="row mb-3">
               <label class="form-label" for="price">Precio de lo que quieres comprar:</label>
@@ -312,6 +312,9 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
