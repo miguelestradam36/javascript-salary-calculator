@@ -158,12 +158,68 @@
         </section>
 
         <!-- Stats section -->
-        <div class="container section-title" data-aos="fade-up">
-          <span>Análisis sobre ingresos</span>
-          <h2 class="title">Análisis sobre ingresos</h2>
-          <p class="description">Resultados en base a la cantidad introducida</p>
-        </div><!-- End Section Title -->
-        
+
+        <!-- Stats Section -->
+        <section id="stats" class="stats section">
+
+          <div class="container section-title" data-aos="fade-up">
+            <span>Análisis sobre ingresos</span>
+            <h2 class="title">Análisis sobre ingresos</h2>
+            <p class="description">Resultados en base a la cantidad introducida</p>
+          </div><!-- End Section Title -->
+
+          <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="row gy-4">
+
+              <div class="col-lg-3 col-md-6">
+                <div class="stats-item text-center w-100 h-100">
+                  <span id="seconds"></span>
+                  <p>Clients</p>
+                </div>
+              </div><!-- End Stats Item -->
+
+              <div class="col-lg-3 col-md-6">
+                <div id="minutes" class="stats-item text-center w-100 h-100">
+                  <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+                  <p>Projects</p>
+                </div>
+              </div><!-- End Stats Item -->
+
+              <div class="col-lg-3 col-md-6">
+                <div id="hours" class="stats-item text-center w-100 h-100">
+                  <span class="purecounter"></span>
+                  <p>Hours Of Support</p>
+                </div>
+              </div><!-- End Stats Item -->
+
+              <div class="col-lg-3 col-md-6">
+                <div id="days" class="stats-item text-center w-100 h-100">
+                  <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+                  <p>Workers</p>
+                </div>
+              </div><!-- End Stats Item -->
+
+              <div class="col-lg-3 col-md-6">
+                <div id="article" class="stats-item text-center w-100 h-100">
+                  <span class="purecounter"></span>
+                  <p>Hours Of Support</p>
+                </div>
+              </div><!-- End Stats Item -->
+
+              <div class="col-lg-3 col-md-6">
+                <div id="meeting" class="stats-item text-center w-100 h-100">
+                  <span class="purecounter"></span>
+                  <p class="people"></p>
+                </div>
+              </div><!-- End Stats Item -->
+
+            </div>
+
+          </div>
+
+        </section><!-- /Stats Section -->
+
         <!-- Stats section finish -->
          
         <!-- Pricing Section -->
@@ -258,7 +314,7 @@
 
     <div class="container footer-top">
       <div class="row gy-4">
-        <div class="col-lg-5 col-md-12 footer-about">
+        <div class="col-lg-6 col-md-12 footer-about">
           <a href="index.php" class="logo d-flex align-items-center">
             <span class="sitename">Calculadora de salario neto</span>
           </a>
@@ -271,16 +327,8 @@
           </div>
         </div>
 
-        <div class="col-lg-3 col-6 footer-links">
-          <h4>Otros proyectos</h4>
-          <ul>
-            <li><a href="#">Proyecto numero 1</a></li>
-            <li><a href="#">Proyecto numero 1</a></li>
-            <li><a href="#">Proyecto numero 1</a></li>
-          </ul>
-        </div>
 
-        <div class="col-lg-4 col-md-12 footer-contact text-center text-md-start">
+        <div class="col-lg-6 col-md-12 footer-contact text-center text-md-start">
           <h4>Contáctenos</h4>
           <p>Moravia, San Jose</p>
           <p>Costa Rica</p>
