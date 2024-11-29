@@ -70,27 +70,27 @@ function calculate() {
   TaxesElement.textContent =  `${currencySymbol}${totaltaxes}`;
 
   document.getElementById('seconds').innerHTML = `${currencySymbol}${perSecond.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
-  document.getElementById('minutes').getElementsByClassName("purecounter")[0].textContent = `${currencySymbol}${perMinute.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
-  document.getElementById('hours').getElementsByClassName("purecounter")[0].textContent = `${currencySymbol}${hourlyRate.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
-  document.getElementById('days').getElementsByClassName("purecounter")[0].textContent = `${currencySymbol}${perDay.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
+  document.getElementById('minutes').innerHTML = `${currencySymbol}${perMinute.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
+  document.getElementById('hours').innerHTML = `${currencySymbol}${hourlyRate.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
+  document.getElementById('days').innerHTML = `${currencySymbol}${perDay.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
 
   document.getElementById('raw').textContent = `${currencySymbol}${salary}`;
   document.getElementById('months').textContent = `${currencySymbol}${netSalary}`;
 
   if (price > 0) {
       const totalHoursToBuy = price / hourlyRate;
-      document.getElementById('article').getElementsByClassName("purecounter")[0].textContent = `${totalHoursToBuy.toFixed(1)}`;
+      document.getElementById('article').innerHTML = `${totalHoursToBuy.toFixed(1)}`;
   } else {
-      document.getElementById('article').getElementsByClassName("purecounter")[0].textContent = `N/A`;
+      document.getElementById('article').innerHTML = `N/A`;
   }
 
   if (numPeople === 0) { 
-      document.getElementById('meeting').getElementsByClassName("people")[0].textContent = "No planeo tener una reunión";
-      document.getElementById('meeting').getElementsByClassName("purecounter")[0].textContent = `N/A`;
+      document.getElementById('peopleresult').textContent = "No planeo tener una reunión";
+      document.getElementById('meeting').innerHTML = `N/A`;
   } else {
       var text = document.createTextNode(`${numPeople} person present`);
-      document.getElementById('meeting').getElementsByClassName("people")[0].textContent = `Fondos necesarios para una reunión de ${numPeople} personas presentes`;
-      document.getElementById('meeting').getElementsByClassName("purecounter")[0].textContent = `${currencySymbol}${meetingCost.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
+      document.getElementById('peopleresult').textContent = `Fondos necesarios para una reunión de ${numPeople} personas presentes`;
+      document.getElementById('meeting').innerHTML  = `${currencySymbol}${meetingCost.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
   }
 
   if (previousSalary !== salary) {
