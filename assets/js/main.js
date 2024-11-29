@@ -56,7 +56,7 @@ function calculate() {
   totalinsurance = salary * deductionPercentage;
   let netSalary = salary - (totaltaxes + totalinsurance);
 
-  let hourlyRate = netSalary / (30 * 24);
+  let hourlyRate = netSalary / (200);
   let perSecond = hourlyRate / 3600;
   let perMinute = hourlyRate / 60;
   let perDay = hourlyRate * 24;
