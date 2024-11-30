@@ -158,16 +158,16 @@ function startClock(rate, brutorate) {
 
 
     clockElement.innerHTML = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-    earningsElement.textContent = `${currencySymbol}${totalEarnedNormal.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
-    brutoearningsElement.textContent = `${currencySymbol}${totalEarnedBruto.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
+    earningsElement.textContent = `${currencySymbol}${totalEarnedNormal.toFixed(2).toLocaleString(undefined, {minimumFractionDigits: 1})}`;
+    brutoearningsElement.textContent = `${currencySymbol}${totalEarnedBruto.toFixed(2).toLocaleString(undefined, {minimumFractionDigits: 1})}`;
 
     clock2Element.innerHTML = `${hoursX2.toString().padStart(2, '0')}:${minutesX2.toString().padStart(2, '0')}:${secondsX2.toString().padStart(2, '0')}`;
-    earnings2Element.textContent = `${currencySymbol}${totalEarnedX2.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
-    brutoearnings2Element.textContent = `${currencySymbol}${totalEarnedBrutoX2.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
+    earnings2Element.textContent = `${currencySymbol}${totalEarnedX2.toFixed(2).toLocaleString(undefined, {minimumFractionDigits: 1})}`;
+    brutoearnings2Element.textContent = `${currencySymbol}${totalEarnedBrutoX2.toFixed(2).toLocaleString(undefined, {minimumFractionDigits: 1})}`;
 
     clock3Element.innerHTML = `${hoursX5.toString().padStart(2, '0')}:${minutesX5.toString().padStart(2, '0')}:${secondsX5.toString().padStart(2, '0')}`;
-    earnings3Element.textContent = `${currencySymbol}${totalEarnedX5.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
-    brutoearnings3Element.textContent = `${currencySymbol}${totalEarnedBrutoX5.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
+    earnings3Element.textContent = `${currencySymbol}${totalEarnedX5.toFixed(2).toLocaleString(undefined, {minimumFractionDigits: 1})}`;
+    brutoearnings3Element.textContent = `${currencySymbol}${totalEarnedBrutoX5.toFixed(2).toLocaleString(undefined, {minimumFractionDigits: 1})}`;
 
 
   }, 1000);

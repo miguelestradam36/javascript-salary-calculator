@@ -124,9 +124,9 @@
         <br/>
         <section id="alt-pricing" class="alt-pricing section">
           <div class="container section-title" data-aos="fade-up">
-            <span>Impuestos</span>
-            <h2 class="title">Impuestos</h2>
-            <p class="description">Resultados en base a la cantidad introducida</p>
+            <span>Aporte en impuestos por mes</span>
+            <h2 class="title">Aporte en impuestos por mes</h2>
+            <p class="description">No más complicaciones con números. Entra a elvalordeltiempo.com, descubre tu salario neto y cuánto vale cada segundo de tu esfuerzo. ¡Prueba nuestra herramienta gratuita ahora!</p>
           </div><!-- End Section Title -->
           <div class="container">
             <div class="row gy-4 pricing-item featured mt-4" data-aos="fade-up" data-aos-delay="200">
