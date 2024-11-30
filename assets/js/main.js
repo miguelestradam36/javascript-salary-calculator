@@ -82,8 +82,8 @@ function calculate() {
 
   salary = parseFloat(salary.toFixed(2));
 
-  InsuranceElement.textContent =  `${currencySymbol}${totalinsurance}`;
-  TaxesElement.textContent =  `${currencySymbol}${totaltaxes}`;
+  InsuranceElement.textContent =  `${currencySymbol}${totalinsurance.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
+  TaxesElement.textContent =  `${currencySymbol}${totaltaxes.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
 
   document.getElementById('seconds').innerHTML = `${currencySymbol}${perSecond.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
   document.getElementById('minutes').innerHTML = `${currencySymbol}${perMinute.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
@@ -95,7 +95,7 @@ function calculate() {
 
   if (price > 0) {
       const totalHoursToBuy = price / hourlyRate;
-      document.getElementById('article').innerHTML = `${totalHoursToBuy.toFixed(1)}`;
+      document.getElementById('article').innerHTML = `${totalHoursToBuy.toFixed(1).toLocaleString(undefined, {minimumFractionDigits: 1})}`;
   } else {
       document.getElementById('article').innerHTML = `N/A`;
   }

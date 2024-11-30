@@ -3,41 +3,51 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" prefix="og: https://valordeltiempo.com">
 <head>
   <meta charset="UTF-8">
-  <meta name="google-adsense-account" content="ca-pub-7712765517917992">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculadora de Salario Neto</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  
-  <meta name="description" content="Calculadora de salario neto en base a salario bruto mensual">
-  <meta name="keywords" content="salario neto, salario bruto, costa rica">
 
+  <meta name="google-adsense-account" content="ca-pub-7712765517917992">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ValordelTiempo - Calculadora de Salario Neto</title>
+  
+  <!-- General Meta Tags -->
+  <meta name="title" content="ValordelTiempo - Calculadora de Salario Neto">
+  <meta name="description" content="Calculadora de salario neto en base a salario bruto mensual, conoce tu aporte de impuesto a la renta y el seguro social costarricense por mes">
+  <meta name="keywords" content="salario neto, salario bruto, costa rica, valor del tiempo, valordeltiempo, salarios costa rica, análisis de salario neto, análisis de salario bruto, impuesto a la renta, impuestos">
+  <meta name="image" content="assets/images/favicon.png">
+  
+  <!-- General Meta Tags - Different Syntax -->
   <meta itemprop="name" content="Calculadora de Salario Neto">
-  <meta itemprop="description" content="Calculadora de salario neto en base a salario bruto mensual">
+  <meta itemprop="description" content="Calculadora de salario neto en base a salario bruto mensual, conoce tu aporte de impuesto a la renta y el seguro social costarricense por mes">
   <meta itemprop="image" content="assets/images/favicon.png">
   <link rel="canonical" href="https://valordeltiempo.com" />
-
+  
+  <!-- Open Graph Meta Tags -->
   <meta property="og:url" content="https://valordeltiempo.com">
+  <meta property="og:type" content="website">
   <meta property="og:image" content="assets/images/favicon.png">
-  <meta property="og:description" content="Calculadora de salario neto en base a salario bruto mensual">
+  <meta property="og:description" content="Calculadora de salario neto en base a salario bruto mensual, conoce tu aporte de impuesto a la renta y el seguro social costarricense por mes">
   <meta property="og:title" content="Calculadora de Salario Neto">
   <meta property="og:site_name" content="Calculadora de Salario Neto">
-
+  
+  <!-- Twitter/X Meta Tags -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:url" content="https://valordeltiempo.com">
   <meta name="twitter:title" content="Calculadora de Salario Neto">
-  <meta name="twitter:description" content="Calculadora de salario neto en base a salario bruto mensual">
+  <meta name="twitter:description" content="Calculadora de salario neto en base a salario bruto mensual, conoce tu aporte de impuesto a la renta y el seguro social costarricense por mes">
   <meta name="twitter:image" content="assets/images/favicon.png">
 
-
   <!-- Favicons -->
-  <link href="assets/images/favicon.png" rel="icon">
+  <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png" />
+  <link rel="icon" href="assets/images/favicon.png" type="image/png" />
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
@@ -54,35 +64,26 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- Premade CSS File -->
-  <link href="assets/css/premade.css" rel="stylesheet">
-
   <!-- Google Ads Script -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7712765517917992"
   crossorigin="anonymous"></script>
-
 
 </head>
 <body class="index-page">
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <h1 class="sitename">Logis</h1>
+      <a aria-label="Link al sitio web valor del tiempo" href="index.php" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename">ValordelTiempo</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Home<br></a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.php" class="active">Inicio<br></a></li>
+          <li><a href="#result">Resultado</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
-      <a class="btn-getstarted" href="get-a-quote.html">Get a Quote</a>
 
     </div>
   </header>
@@ -97,7 +98,7 @@
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
 
             <h2 data-aos="fade-up">Análisis de salario</h2>
-            <p data-aos="fade-up" data-aos-delay="100">Esta calculadora va a mostrar el ingreso neto de un empleado en base a su salario bruto mensual</p>
+            <p data-aos="fade-up" data-aos-delay="100">Esta calculadora va a mostrar el ingreso neto de un empleado en base a su salario bruto mensual<br/>En este caso la calculadora asume que la cantidad de horas trabajadas por día son 8 sin contar la hora de almuerzo. Haciendo 40 horas a la semana</p>
             <div class="row mb-3">
               <label class="form-label" for="salary">Ingresa tu salario bruto mensual:</label>
               <input class="form-control" type="number" id="salary" placeholder="Salario mensual" min="0" pattern="^(?=.)(\d{1,3}(,\d{3})*)?(\.\d+)?$" required/>
@@ -140,7 +141,7 @@
                 <h4><sup id="ccss"></sup><span> / mes</span></h4>
               </div>
               <div class="col-lg-2 d-flex align-items-center justify-content-center">
-                <a><img class="img-fluid" src="assets/images/ccss.png" /></a>
+                <img class="img-fluid" src="assets/images/ccss.png" />
               </div>
             </div><!-- End Pricing Item -->
             <div class="row gy-4 pricing-item" data-aos="fade-up" data-aos-delay="100">
@@ -151,7 +152,7 @@
                 <h4><sup id="renta"></sup><span> / mes</span></h4>
               </div>
               <div class="col-lg-2 d-flex align-items-center justify-content-center">
-                <a><img class="img-fluid" src="assets/images/hacienda.svg" /></a>
+                <img class="img-fluid" src="assets/images/hacienda.svg" />
               </div>
             </div><!-- End Pricing Item -->
           </div>
@@ -175,42 +176,42 @@
               <div class="col-lg-3 col-md-6">
                 <div class="stats-item text-center w-100 h-100">
                   <span id="seconds"></span>
-                  <p>Clients</p>
+                  <p>Ingreso por segundo</p>
                 </div>
               </div><!-- End Stats Item -->
 
               <div class="col-lg-3 col-md-6">
-                <div id="minutes" class="stats-item text-center w-100 h-100">
-                  <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-                  <p>Projects</p>
+                <div class="stats-item text-center w-100 h-100">
+                  <span id="minutes"></span>
+                  <p>Ingreso por minuto</p>
                 </div>
               </div><!-- End Stats Item -->
 
               <div class="col-lg-3 col-md-6">
-                <div id="hours" class="stats-item text-center w-100 h-100">
-                  <span class="purecounter"></span>
-                  <p>Hours Of Support</p>
+                <div class="stats-item text-center w-100 h-100">
+                  <span id="hours"></span>
+                  <p>Ingreso por hora</p>
                 </div>
               </div><!-- End Stats Item -->
 
               <div class="col-lg-3 col-md-6">
-                <div id="days" class="stats-item text-center w-100 h-100">
-                  <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
-                  <p>Workers</p>
+                <div class="stats-item text-center w-100 h-100">
+                  <span id="days"></span>
+                  <p>Ingreso por día</p>
                 </div>
               </div><!-- End Stats Item -->
 
               <div class="col-lg-3 col-md-6">
-                <div id="article" class="stats-item text-center w-100 h-100">
-                  <span class="purecounter"></span>
-                  <p>Hours Of Support</p>
+                <div class="stats-item text-center w-100 h-100">
+                  <span id="article"></span>
+                  <p>Horas para comprar artículo</p>
                 </div>
               </div><!-- End Stats Item -->
 
               <div class="col-lg-3 col-md-6">
-                <div id="meeting" class="stats-item text-center w-100 h-100">
-                  <span class="purecounter"></span>
-                  <p class="people"></p>
+                <div class="stats-item text-center w-100 h-100">
+                  <span id="meeting"></span>
+                  <p id="peopleresult"></p>
                 </div>
               </div><!-- End Stats Item -->
 
@@ -315,25 +316,23 @@
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-6 col-md-12 footer-about">
-          <a href="index.php" class="logo d-flex align-items-center">
+          <a aria-label="Link al sitio web valor del tiempo" href="index.php" class="logo d-flex align-items-center">
             <span class="sitename">Calculadora de salario neto</span>
           </a>
           <p>Sitio web que permite el cálculo del salario neto en base al salario bruto mensual, junto a otras estadísticas</p>
+          <hr/>
+          <p>En este caso el aporte de impuesto a la renta es definido automáticamente en base al ingreso mensual bruto, esto puesto a que difiere de acuerdo a la cantidad</p>
           <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a aria-label="Link al sitio de instagram de valor del tiempo" href="https://www.instagram.com/valortiempo"><i class="bi bi-instagram"></i></a>
           </div>
         </div>
 
 
         <div class="col-lg-6 col-md-12 footer-contact text-center text-md-start">
           <h4>Contáctenos</h4>
+          <hr/>
           <p>Moravia, San Jose</p>
           <p>Costa Rica</p>
-          <p class="mt-4"><strong>Phone:</strong> <span>N/A</span></p>
-          <p><strong>Email:</strong> <span>N/A</span></p>
         </div>
 
       </div>
@@ -346,7 +345,7 @@
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a aria-label="Página que tiene diseños de sitios web" href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
 
