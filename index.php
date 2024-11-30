@@ -102,7 +102,11 @@
             <p data-aos="fade-up" data-aos-delay="100">Esta calculadora va a mostrar el ingreso neto de un empleado en base a su salario bruto mensual<br/>En este caso la calculadora asume que la cantidad de horas trabajadas por día son 8 sin contar la hora de almuerzo. Haciendo 40 horas a la semana</p>
             <div class="row mb-3">
               <label class="form-label" for="salary">Ingresa tu salario bruto mensual:</label>
-              <input class="form-control" type="number" id="salary" placeholder="300,000.00" min="0" pattern="^(?=.)(\d{1,3}(,\d{3})*)?(\.\d+)?$" required/>
+              <input class="form-control" type="number" id="salary" value="300000" placeholder="300,000.00" min="0" pattern="^(?=.)(\d{1,3}(,\d{3})*)?(\.\d+)?$" required/>
+            </div>
+            <div class="row mb-3">
+              <label class="form-label" for="hours">Ingresa la horas trabajadas por semana:</label>
+              <input class="form-control" type="number" id="hours" value="48" placeholder="48" min="0" pattern="^(?=.)(\d{1,3}(,\d{3})*)?(\.\d+)?$" required/>
             </div>
             <div class="row mb-3">
               <button class="btn btn-primary" onclick="calculate()">Calcular</button>

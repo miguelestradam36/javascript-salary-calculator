@@ -28,20 +28,25 @@ document.getElementById('mensajed').style.display = 'none';
 
 function calculate() {
 
-  document.getElementById('result').style.display = 'flex';
-  const InsuranceElement = document.getElementById('ccss');
-  const TaxesElement = document.getElementById('renta');
-  let taxrate = 0;
   let salary = parseFloat(document.getElementById('salary').value);
-  const deductionPercentage = 10.67 / 100 ;
-
-  document.getElementById('mensajed').textContent = `El valor introducido es: ${currencySymbol}${salary.toLocaleString(undefined, {minimumFractionDigits: 1})}, tus resultados están debajo del formulario.`
-  document.getElementById('mensajed').style.display = 'flex';
+  let workedhours = parseFloat(document.getElementById('hours').value);
 
   if (isNaN(salary) || salary <= 0) {
     alert("Por favor, ingresa un salario válido.");
     return;
   }
+
+  document.getElementById('result').style.display = 'flex';
+
+  const InsuranceElement = document.getElementById('ccss');
+  const TaxesElement = document.getElementById('renta');
+
+  let taxrate = 0;
+
+  const deductionPercentage = 10.67 / 100 ;
+
+  document.getElementById('mensajed').textContent = `Tu salario mensual bruto es: ${currencySymbol}${salary.toLocaleString(undefined, {minimumFractionDigits: 1})} y trabajas ${workedhours} horas a la semana. Tus resultados están debajo del formulario ${noinput} .`
+  document.getElementById('mensajed').style.display = 'flex';
 
   if (salary <= 929000){
     taxrate = 0;
@@ -59,12 +64,12 @@ function calculate() {
   totalinsurance = salary * deductionPercentage;
   let netSalary = salary - (totaltaxes + totalinsurance);
 
-  let hourlyRate = netSalary / 176;
+  let hourlyRate = netSalary / (workedhours * 4.4);
   let perSecond = hourlyRate / 3600;
   let perMinute = hourlyRate / 60;
   let perDay = hourlyRate * 9;
 
-  let brutohourlyRate = salary / 176;
+  let brutohourlyRate = salary / (workedhours * 4.4);
   let brutoperSecond = brutohourlyRate / 3600;
 
   totaltaxes = parseFloat(totaltaxes.toFixed(2));
@@ -169,13 +174,21 @@ function startClock(rate, brutorate) {
 
 function clearFields() {
   document.getElementById('salary').value = '';
-  document.getElementById('price').value = '';
-  document.getElementById('people').value = '1'; 
+  document.getElementById('hours').value = '';
   document.getElementById('result').innerHTML = '';
+
   document.getElementById('clock').innerHTML = '';
   document.getElementById('earnings').innerHTML = ''; 
-  document.getElementById('meeting').getElementsByClassName("purecounter")[0].textContent = ''; 
-  document.getElementById('article').getElementsByClassName("purecounter")[0].textContent = ''; 
+  document.getElementById('brutoearnings').innerHTML = '';
+
+  document.getElementById('clock2').innerHTML = '';
+  document.getElementById('earnings2').innerHTML = '';
+  document.getElementById('brutoearnings2').innerHTML = '';
+
+  document.getElementById('clock3').innerHTML = '';
+  document.getElementById('earnings3').innerHTML = '';
+  document.getElementById('brutoearnings3').innerHTML = '';
+
   clearInterval(clockInterval);
   totalEarnedNormal = 0;
   totalEarnedX2 = 0;
