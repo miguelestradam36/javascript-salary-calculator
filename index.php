@@ -80,7 +80,6 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.php" class="active">Inicio<br></a></li>
-          <li><a href="#result">Resultado (después de hacer consulta)</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -91,22 +90,22 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="assets/images/map.png" alt="" class="hero-bg" data-aos="fade-in">
+      <img src="assets/images/map.png" alt="Imagen de fondo" class="hero-bg" data-aos="fade-in">
 
       <div class="container">
         <div class="row gy-4 d-flex justify-content-between">
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
             <div class="alert alert-success" id="mensajed">
             </div>
-            <h2 data-aos="fade-up">Análisis de salario</h2>
-            <p data-aos="fade-up" data-aos-delay="100">Esta calculadora va a mostrar el ingreso neto de un empleado en base a su salario bruto mensual<br/>En este caso la calculadora asume que la cantidad de horas trabajadas por día son 8 sin contar la hora de almuerzo. Haciendo 40 horas a la semana</p>
+            <h2 data-aos="fade-up">¿Sabes cuánto vale tu tiempo realmente?</h2>
+            <p data-aos="fade-up" data-aos-delay="100">¿Cuánto vale tu tiempo? Descúbrelo sin riesgos. En elvalordeltiempo.com calculamos tu salario neto con precisión y sin guardar tu información. Explora nuestro taxímetro y observa cómo cada segundo cuenta. ¡Haz clic ahora y compruébalo por ti mismo!</p>
             <div class="row mb-3">
               <label class="form-label" for="salary">Ingresa tu salario bruto mensual:</label>
               <input class="form-control" type="number" id="salary" value="300000" placeholder="300,000.00" min="0" pattern="^(?=.)(\d{1,3}(,\d{3})*)?(\.\d+)?$" required/>
             </div>
             <div class="row mb-3">
               <label class="form-label" for="hours">Ingresa la horas trabajadas por semana:</label>
-              <input class="form-control" type="number" id="hours" value="48" placeholder="48" min="0" pattern="^(?=.)(\d{1,3}(,\d{3})*)?(\.\d+)?$" required/>
+              <input class="form-control" type="number" id="workedhours" value="48" placeholder="48" min="0" pattern="^(?=.)(\d{1,3}(,\d{3})*)?(\.\d+)?$" required/>
             </div>
             <div class="row mb-3">
               <button class="btn btn-primary" onclick="calculate()">Calcular</button>
@@ -114,7 +113,7 @@
           </div>
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
             <div class="container">
-              <img src="assets/images/dollar.png" class="img-fluid" alt="...">
+              <img src="assets/images/dollar.png" class="img-fluid" alt="Imagen de un dolar">
             </div>
           </div>
         </div>
@@ -138,7 +137,7 @@
                 <h4><sup id="ccss"></sup><span> / mes</span></h4>
               </div>
               <div class="col-lg-2 d-flex align-items-center justify-content-center">
-                <img class="img-fluid" src="assets/images/ccss.png" />
+                <img class="img-fluid" src="assets/images/ccss.png" alt="Seguro Social de Costa Rica"/>
               </div>
             </div><!-- End Pricing Item -->
             <div class="row gy-4 pricing-item" data-aos="fade-up" data-aos-delay="100">
@@ -149,7 +148,7 @@
                 <h4><sup id="renta"></sup><span> / mes</span></h4>
               </div>
               <div class="col-lg-2 d-flex align-items-center justify-content-center">
-                <img class="img-fluid" src="assets/images/hacienda.svg" />
+                <img class="img-fluid" src="assets/images/hacienda.svg" alt="Ministerio de Hacienda de Costa Rica" />
               </div>
             </div><!-- End Pricing Item -->
           </div>
@@ -161,9 +160,9 @@
         <section id="stats" class="stats section">
 
           <div class="container section-title" data-aos="fade-up">
-            <span>Análisis sobre ingresos</span>
-            <h2 class="title">Análisis sobre ingresos</h2>
-            <p class="description">Resultados en base a la cantidad introducida</p>
+            <span>Ingresos en diferentes cantidades de tiempo</span>
+            <h2 class="title">Ingresos en diferentes cantidades de tiempo</h2>
+            <p class="description">¿Sabes cuánto vale tu tiempo realmente? Descúbrelo en segundos con nuestra herramienta gratuita en elvalordeltiempo.com. Calcula tu salario neto con precisión y visualiza cada segundo de esfuerzo convertido en ingresos. ¡Haz que tus finanzas trabajen a tu favor!</p>
           </div><!-- End Section Title -->
 
           <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -235,7 +234,12 @@
         </section><!-- /Pricing Section -->
         <section id="alt-pricing" class="alt-pricing section">
           <div class="container">
-
+          <!-- Section Title -->
+          <div class="container section-title" data-aos="fade-up">
+            <span>Ganancias a tiempo real</span>
+            <h2>Ganancias a tiempo real</h2>
+            <p>¿Cuánto ganas por segundo? Descúbrelo con nuestro ‘taxímetro’ financiero. Introduce tu salario y las horas trabajadas, y deja que la magia suceda en elvalordeltiempo.com. ¡Conocer tu salario neto nunca fue tan simple!</p>
+          </div><!-- End Section Title -->
             <div class="row gy-4 pricing-item featured mt-4" data-aos="fade-up" data-aos-delay="200">
               <div class="col-lg-12 d-flex align-items-center justify-content-center">
                 <h4 id="clock"></h4>
@@ -370,6 +374,11 @@
           <hr/>
           <p>Moravia, San Jose</p>
           <p>Costa Rica</p>
+        </div>
+
+        <div class="col-lg-12 col-md-12 footer-about text-center text-md-start">
+          <hr/>
+          <p>Transforma tus números en claridad. Usa ‘El Valor Del Tiempo’ para conocer exactamente cuánto ganas después de los rebajos de ley. Una herramienta fácil, rápida y gratuita en elvalordeltiempo.com. ¡Porque tu tiempo vale oro,</p>
         </div>
 
       </div>

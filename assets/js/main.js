@@ -29,7 +29,7 @@ document.getElementById('mensajed').style.display = 'none';
 function calculate() {
 
   let salary = parseFloat(document.getElementById('salary').value);
-  let workedhours = parseFloat(document.getElementById('hours').value);
+  let workedhours = parseFloat(document.getElementById('workedhours').value);
 
   if (isNaN(salary) || salary <= 0) {
     alert("Por favor, ingresa un salario válido.");
@@ -42,6 +42,7 @@ function calculate() {
   const TaxesElement = document.getElementById('renta');
 
   let taxrate = 0;
+  let noinput = '';
 
   const deductionPercentage = 10.67 / 100 ;
 
@@ -174,7 +175,7 @@ function startClock(rate, brutorate) {
 
 function clearFields() {
   document.getElementById('salary').value = '';
-  document.getElementById('hours').value = '';
+  document.getElementById('workedhours').value = '';
   document.getElementById('result').innerHTML = '';
 
   document.getElementById('clock').innerHTML = '';
