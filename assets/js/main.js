@@ -24,16 +24,19 @@ let totaltaxes = 0;
 const currencySymbol = '₡';
 
 document.getElementById('result').style.display = 'none';
+document.getElementById('mensajed').style.display = 'none';
 
 function calculate() {
+
   document.getElementById('result').style.display = 'flex';
   const InsuranceElement = document.getElementById('ccss');
   const TaxesElement = document.getElementById('renta');
   let taxrate = 0;
   let salary = parseFloat(document.getElementById('salary').value);
   const deductionPercentage = 10.67 / 100 ;
-  const price = parseFloat(document.getElementById('price').value) || 0;
-  const numPeople = parseInt(document.getElementById('people').value) || 0;
+
+  document.getElementById('mensajed').textContent = `El valor introducido es: ${currencySymbol}${salary.toLocaleString(undefined, {minimumFractionDigits: 1})}, tus resultados están debajo del formulario.`
+  document.getElementById('mensajed').style.display = 'flex';
 
   if (isNaN(salary) || salary <= 0) {
     alert("Por favor, ingresa un salario válido.");
@@ -64,10 +67,6 @@ function calculate() {
   let brutohourlyRate = salary / 176;
   let brutoperSecond = brutohourlyRate / 3600;
 
-  let meetingCost = hourlyRate * numPeople; 
-
-  meetingCost = parseFloat(meetingCost.toFixed(2));
-
   totaltaxes = parseFloat(totaltaxes.toFixed(2));
   totalinsurance = parseFloat(totalinsurance.toFixed(2));
   netSalary = parseFloat(netSalary.toFixed(2));
@@ -90,23 +89,8 @@ function calculate() {
   document.getElementById('hours').innerHTML = `${currencySymbol}${hourlyRate.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
   document.getElementById('days').innerHTML = `${currencySymbol}${perDay.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
 
-  document.getElementById('raw').textContent = `${currencySymbol}${salary}`;
-  document.getElementById('months').textContent = `${currencySymbol}${netSalary}`;
-
-  if (price > 0) {
-      const totalHoursToBuy = price / hourlyRate;
-      document.getElementById('article').innerHTML = `${totalHoursToBuy.toFixed(1).toLocaleString(undefined, {minimumFractionDigits: 1})}`;
-  } else {
-      document.getElementById('article').innerHTML = `N/A`;
-  }
-
-  if (numPeople === 0) { 
-      document.getElementById('peopleresult').textContent = "No planeo tener una reunión";
-      document.getElementById('meeting').innerHTML = `N/A`;
-  } else {
-      document.getElementById('peopleresult').textContent = `Fondos necesarios para una reunión de 1 hora con ${numPeople} personas presentes`;
-      document.getElementById('meeting').innerHTML  = `${currencySymbol}${meetingCost.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
-  }
+  document.getElementById('raw').textContent = `${currencySymbol}${salary.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
+  document.getElementById('months').textContent = `${currencySymbol}${netSalary.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
 
   if (previousSalary !== salary) {
     totalEarnedNormal = 0;
@@ -123,6 +107,8 @@ function calculate() {
   }
 
   previousSalary = salary;
+
+  window.location.href = '#result';
 }
 
 function startClock(rate, brutorate) {

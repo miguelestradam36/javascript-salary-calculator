@@ -80,7 +80,7 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.php" class="active">Inicio<br></a></li>
-          <li><a href="#result">Resultado</a></li>
+          <li><a href="#result">Resultado (después de hacer consulta)</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -96,20 +96,13 @@
       <div class="container">
         <div class="row gy-4 d-flex justify-content-between">
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-
+            <div class="alert alert-success" id="mensajed">
+            </div>
             <h2 data-aos="fade-up">Análisis de salario</h2>
             <p data-aos="fade-up" data-aos-delay="100">Esta calculadora va a mostrar el ingreso neto de un empleado en base a su salario bruto mensual<br/>En este caso la calculadora asume que la cantidad de horas trabajadas por día son 8 sin contar la hora de almuerzo. Haciendo 40 horas a la semana</p>
             <div class="row mb-3">
               <label class="form-label" for="salary">Ingresa tu salario bruto mensual:</label>
-              <input class="form-control" type="number" id="salary" placeholder="Salario mensual" min="0" pattern="^(?=.)(\d{1,3}(,\d{3})*)?(\.\d+)?$" required/>
-            </div>
-            <div class="row mb-3">
-              <label class="form-label" for="price">Precio de lo que quieres comprar:</label>
-              <input class="form-control" type="number" id="price" placeholder="Precio del artículo" min="0" />
-            </div>
-            <div class="row mb-3">
-              <label class="form-label" for="people">Número de personas en reunión planificada:</label>
-              <input class="form-control" type="number" id="people" placeholder="Número de personas" value="1" /> 
+              <input class="form-control" type="number" id="salary" placeholder="Salario mensual" min="0" default="300000"pattern="^(?=.)(\d{1,3}(,\d{3})*)?(\.\d+)?$" required/>
             </div>
             <div class="row mb-3">
               <button class="btn btn-primary" onclick="calculate()">Calcular</button>
@@ -198,20 +191,6 @@
                 <div class="stats-item text-center w-100 h-100">
                   <span id="days"></span>
                   <p>Ingreso por día</p>
-                </div>
-              </div><!-- End Stats Item -->
-
-              <div class="col-lg-3 col-md-6">
-                <div class="stats-item text-center w-100 h-100">
-                  <span id="article"></span>
-                  <p>Horas para comprar artículo</p>
-                </div>
-              </div><!-- End Stats Item -->
-
-              <div class="col-lg-3 col-md-6">
-                <div class="stats-item text-center w-100 h-100">
-                  <span id="meeting"></span>
-                  <p id="peopleresult"></p>
                 </div>
               </div><!-- End Stats Item -->
 
@@ -306,7 +285,61 @@
             
           </div>
         </section>
+        <!-- Faq Section -->
+        <section id="faq" class="faq section">
 
+          <!-- Section Title -->
+          <div class="container section-title" data-aos="fade-up">
+            <span>Preguntas comunes</span>
+            <h2>Preguntas comunes</h2>
+            <p>Información como por ejemplo, los cambios de impuesto a la renta en base al salario bruto mensual o el aporte del seguro social</p>
+          </div><!-- End Section Title -->
+
+          <div class="container">
+
+            <div class="row justify-content-center">
+
+              <div class="col-lg-10">
+
+                <div class="faq-container">
+
+                  <div class="faq-item faq-active" data-aos="fade-up" data-aos-delay="200">
+                    <i class="faq-icon bi bi-question-circle"></i>
+                    <h3>Seguro Social en Costa Rica</h3>
+                    <div class="faq-content">
+                      <p>En Costa Rica existe un impuesto obligatorio dirigido a la CCSS, el cual es el seguro social del país</p>
+                      <br/>
+                      <p>En este caso el porcentaje es del: <span>10.64%</span></p>
+                    </div>
+                    <i class="faq-toggle bi bi-chevron-right"></i>
+                  </div><!-- End Faq item-->
+
+                  <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <i class="faq-icon bi bi-question-circle"></i>
+                    <h3>Impuesto a la renta en Costa Rica</h3>
+                    <div class="faq-content">
+                      <p>En base, al salario bruto mensual, hasta los ₡929,000/00 no hay impuesto como tal</p>
+                      <br/>
+                      <p>Por otro lado, entre los ₡929,000 y los ₡1,363,000.00 el impuesto es de un %10 sobre el impuesto bruto</p>
+                      <br/>
+                      <p>Por otro lado, entre los ₡1,363,000 y los ₡2,392,000.00 el impuesto es de un %15 sobre el impuesto bruto</p>
+                      <br/>
+                      <p>Por otro lado, entre los ₡2,392,000.00 y los ₡4,783,000.00 el impuesto es de un %20 sobre el impuesto bruto</p>
+                      <br/>
+                      <p>Mientras que, los ingresos mayores a ₡4,783,000.00 tienen un pusto del %25 sobre el impuesto bruto</p>
+                    </div>
+                    <i class="faq-toggle bi bi-chevron-right"></i>
+                  </div><!-- End Faq item-->
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </section><!-- /Faq Section -->
       </div>
 
   </main>
