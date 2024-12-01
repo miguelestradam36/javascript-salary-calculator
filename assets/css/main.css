@@ -1088,6 +1088,7 @@ section,
   background-color: var(--surface-color);
   box-shadow: 0 3px 20px -2px rgba(0, 0, 0, 0.1);
   border-top: 4px solid var(--background-color);
+  font-family: monospace;
   padding: 60px 40px;
   height: 100%;
   border-radius: 5px;
@@ -1440,4 +1441,12 @@ section,
 
 .faq .faq-container .faq-active .faq-toggle {
   transform: rotate(90deg);
+}
+
+/*--------------------------------------------------------------
+# Forcing monospace
+--------------------------------------------------------------*/
+
+.monospace {
+  font-family: monospace !important;
 }

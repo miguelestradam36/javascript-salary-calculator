@@ -98,7 +98,7 @@
             <div class="alert alert-success" id="mensajed">
             </div>
             <h2 data-aos="fade-up">¿Sabes cuánto vale tu tiempo realmente?</h2>
-            <p data-aos="fade-up" data-aos-delay="100">¿Cuánto vale tu tiempo? Descúbrelo sin riesgos. En elvalordeltiempo.com calculamos tu salario neto con precisión y sin guardar tu información. Explora nuestro taxímetro y observa cómo cada segundo cuenta. ¡Haz clic ahora y compruébalo por ti mismo!</p>
+            <p data-aos="fade-up" data-aos-delay="100">¿Cuánto vale tu tiempo? Descúbrelo sin riesgos. En elvalordeltiempo.com calculamos tu salario neto con precisión y sin guardar tu información. Explora nuestra herramienta y observa cómo cada segundo cuenta. ¡Haz clic ahora y compruébalo por ti mismo!</p>
             <div class="row mb-3">
               <label class="form-label" for="salary">Ingresa tu salario bruto mensual:</label>
               <input class="form-control" type="number" id="salary" value="300000" placeholder="300,000.00" min="0" pattern="^(?=.)(\d{1,3}(,\d{3})*)?(\.\d+)?$" required/>
@@ -109,6 +109,10 @@
             </div>
             <div class="row mb-3">
               <button class="btn btn-primary" onclick="calculate()">Calcular</button>
+            </div>
+            <div class="row mb-3">
+              <div class="alert alert-info" id="miniresultado">
+              </div>
             </div>
           </div>
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
@@ -242,7 +246,7 @@
           </div><!-- End Section Title -->
             <div class="row gy-4 pricing-item featured mt-4" data-aos="fade-up" data-aos-delay="200">
               <div class="col-lg-12 d-flex align-items-center justify-content-center">
-                <h4 id="clock"></h4>
+                <h4 class="monospace" id="clock"></h4>
               </div>
               <div class="col-lg-6 d-flex align-items-center justify-content-center">
                 <h4><sup id="earnings"></sup><span> / en base al salario neto</span></h4>
@@ -259,7 +263,7 @@
 
             <div class="row gy-4 pricing-item" data-aos="fade-up" data-aos-delay="100">
               <div class="col-lg-12 d-flex align-items-center justify-content-center">
-                <h4 id="clock2"></h4>
+                <h4 class="monospace" id="clock2"></h4>
               </div>
               <div class="col-lg-6 d-flex align-items-center justify-content-center">
                 <h4><sup id="earnings2"></sup><span> / en base al salario neto</span></h4>
@@ -276,7 +280,7 @@
 
             <div class="row pricing-item featured" data-aos="fade-up" data-aos-delay="200">
               <div class="col-lg-12 d-flex align-items-center justify-content-center">
-                <h4 id="clock3"><span></span></h4>
+                <h4 class="monospace" id="clock3"><span></span></h4>
               </div>
               <div class="col-lg-6 d-flex align-items-center justify-content-center">
                 <h4><sup id="earnings3"></sup><span> / en base al salario neto</span></h4>

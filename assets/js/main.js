@@ -25,6 +25,7 @@ const currencySymbol = '₡';
 
 document.getElementById('result').style.display = 'none';
 document.getElementById('mensajed').style.display = 'none';
+document.getElementById('miniresultado').style.display = 'none';
 
 function calculate() {
 
@@ -35,8 +36,6 @@ function calculate() {
     alert("Por favor, ingresa un salario válido.");
     return;
   }
-
-  document.getElementById('result').style.display = 'flex';
 
   const InsuranceElement = document.getElementById('ccss');
   const TaxesElement = document.getElementById('renta');
@@ -75,6 +74,7 @@ function calculate() {
 
   totaltaxes = parseFloat(totaltaxes.toFixed(2));
   totalinsurance = parseFloat(totalinsurance.toFixed(2));
+  
   netSalary = parseFloat(netSalary.toFixed(2));
 
   brutohourlyRate = parseFloat(brutohourlyRate.toFixed(2));
@@ -114,6 +114,9 @@ function calculate() {
 
   previousSalary = salary;
 
+  document.getElementById('miniresultado').style.display = 'flex';
+  document.getElementById('result').style.display = 'flex';
+
   window.location.href = '#result';
 }
 
@@ -129,6 +132,8 @@ function startClock(rate, brutorate) {
   const clock3Element = document.getElementById('clock3');
   const earnings3Element = document.getElementById('earnings3');
   const brutoearnings3Element = document.getElementById('brutoearnings3');
+
+  const realtimeElement = document.getElementById('miniresultado');
 
   clockInterval = setInterval(() => {
 
@@ -168,6 +173,8 @@ function startClock(rate, brutorate) {
     clock3Element.innerHTML = `${hoursX5.toString().padStart(2, '0')}:${minutesX5.toString().padStart(2, '0')}:${secondsX5.toString().padStart(2, '0')}`;
     earnings3Element.textContent = `${currencySymbol}${totalEarnedX5.toFixed(2).toLocaleString(undefined, {minimumFractionDigits: 1})}`;
     brutoearnings3Element.textContent = `${currencySymbol}${totalEarnedBrutoX5.toFixed(2).toLocaleString(undefined, {minimumFractionDigits: 1})}`;
+
+    realtimeElement.innerHTML = `<i class="bi bi-hourglass-split"></i> &nbsp; Tiempo desde la consulta: <span class="monospace">${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}</span> <br/><i class="bi bi-coin"></i> &nbsp; Ingresos hasta el momento: &nbsp; ${currencySymbol}${totalEarnedNormal.toFixed(2).toLocaleString(undefined, {minimumFractionDigits: 1})}`;
 
 
   }, 1000);
