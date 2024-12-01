@@ -98,7 +98,7 @@
             <div class="alert alert-success" id="mensajed">
             </div>
             <h2 data-aos="fade-up">¿Sabes cuánto vale tu tiempo realmente?</h2>
-            <p data-aos="fade-up" data-aos-delay="100">¿Cuánto vale tu tiempo? Descúbrelo sin riesgos. En elvalordeltiempo.com calculamos tu salario neto con precisión y sin guardar tu información. Explora nuestra herramienta y observa cómo cada segundo cuenta. ¡Haz clic ahora y compruébalo por ti mismo!</p>
+            <p data-aos="fade-up" data-aos-delay="100">¿Cuánto vale tu tiempo? Descúbrelo sin riesgos. En valordeltiempo.com calculamos tu salario neto con precisión y sin guardar tu información. Explora nuestra herramienta y observa cómo cada segundo cuenta. ¡Haz clic ahora y compruébalo por ti mismo!</p>
             <div class="row mb-3">
               <label class="form-label" for="salary">Ingresa tu salario bruto mensual:</label>
               <input class="form-control" type="number" id="salary" value="300000" placeholder="300,000.00" min="0" pattern="^(?=.)(\d{1,3}(,\d{3})*)?(\.\d+)?$" required/>
@@ -133,7 +133,7 @@
           <div class="container section-title" data-aos="fade-up">
             <span>Aporte en impuestos por mes</span>
             <h2 class="title">Aporte en impuestos por mes</h2>
-            <p class="description">No más complicaciones con números. Entra a elvalordeltiempo.com, descubre tu salario neto y cuánto vale cada segundo de tu esfuerzo. ¡Prueba nuestra herramienta gratuita ahora!</p>
+            <p class="description">No más complicaciones con números. Entra a valordeltiempo.com, descubre tu salario neto y cuánto vale cada segundo de tu esfuerzo. ¡Prueba nuestra herramienta gratuita ahora!</p>
           </div><!-- End Section Title -->
           <div class="container">
             <div class="row gy-4 pricing-item featured mt-4" data-aos="fade-up" data-aos-delay="200">
@@ -169,7 +169,7 @@
           <div class="container section-title" data-aos="fade-up">
             <span>Ingresos en diferentes cantidades de tiempo</span>
             <h2 class="title">Ingresos en diferentes cantidades de tiempo</h2>
-            <p class="description">¿Sabes cuánto vale tu tiempo realmente? Descúbrelo en segundos con nuestra herramienta gratuita en elvalordeltiempo.com. Calcula tu salario neto con precisión y visualiza cada segundo de esfuerzo convertido en ingresos. ¡Haz que tus finanzas trabajen a tu favor!</p>
+            <p class="description">¿Sabes cuánto vale tu tiempo realmente? Descúbrelo en segundos con nuestra herramienta gratuita en valordeltiempo.com. Calcula tu salario neto con precisión y visualiza cada segundo de esfuerzo convertido en ingresos. ¡Haz que tus finanzas trabajen a tu favor!</p>
           </div><!-- End Section Title -->
 
           <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -245,7 +245,7 @@
           <div class="container section-title" data-aos="fade-up">
             <span>Ganancias a tiempo real</span>
             <h2>Ganancias a tiempo real</h2>
-            <p>¿Cuánto ganas por segundo? Descúbrelo con nuestro ‘taxímetro’ financiero. Introduce tu salario y las horas trabajadas, y deja que la magia suceda en elvalordeltiempo.com. ¡Conocer tu salario neto nunca fue tan simple!</p>
+            <p>¿Cuánto ganas por segundo? Descúbrelo con nuestro ‘taxímetro’ financiero. Introduce tu salario y las horas trabajadas, y deja que la magia suceda en valordeltiempo.com. ¡Conocer tu salario neto nunca fue tan simple!</p>
           </div><!-- End Section Title -->
             <div class="row gy-4 pricing-item featured mt-4" data-aos="fade-up" data-aos-delay="200">
               <div class="col-lg-12 d-flex align-items-center justify-content-center">
@@ -367,7 +367,7 @@
           <a aria-label="Link al sitio web valor del tiempo" href="index.php" class="logo d-flex align-items-center">
             <span class="sitename"><i class="bi bi-file-earmark-person"></i> Valor del tiempo</span>
           </a>
-          <p>Una herramienta segura, rápida y gratuita. En ‘El Valor Del Tiempo’, tu privacidad es nuestra prioridad. Calcula tu salario neto sin preocuparte por tus datos. Conoce tus ingresos reales en elvalordeltiempo.com. ¡Inténtalo hoy!</p>
+          <p>Una herramienta segura, rápida y gratuita. En ‘El Valor Del Tiempo’, tu privacidad es nuestra prioridad. Calcula tu salario neto sin preocuparte por tus datos. Conoce tus ingresos reales en valordeltiempo.com. ¡Inténtalo hoy!</p>
           <hr/>
           <p>En este caso el aporte de impuesto a la renta es definido automáticamente en base al ingreso mensual bruto, esto puesto a que difiere de acuerdo a la cantidad</p>
           <div class="social-links d-flex mt-4">
