@@ -144,7 +144,7 @@
                 <h4 id="ccss"></h4>
               </div>
               <div class="col-lg-2 d-flex align-items-center justify-content-center">
-                <img class="img-fluid" src="assets/images/ccss.png" alt="Seguro Social de Costa Rica"/>
+                <img class="img-fluid" src="assets/images/ccss.png" alt="Seguro Social de Costa Rica" style="max-width: 60% !important;"/>
               </div>
             </div><!-- End Pricing Item -->
             <div class="row gy-4 pricing-item" data-aos="fade-up" data-aos-delay="100">
@@ -155,7 +155,7 @@
                 <h4 id="renta"></h4>
               </div>
               <div class="col-lg-2 d-flex align-items-center justify-content-center">
-                <img class="img-fluid" src="assets/images/hacienda.svg" alt="Ministerio de Hacienda de Costa Rica" />
+                <img class="img-fluid" src="assets/images/hacienda.svg" alt="Ministerio de Hacienda de Costa Rica" style="max-width: 60% !important;"/>
               </div>
             </div><!-- End Pricing Item -->
           </div>

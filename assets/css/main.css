@@ -1450,3 +1450,12 @@ section,
 .monospace {
   font-family: monospace !important;
 }
+
+/*--------------------------------------------------------------
+# Main padding
+--------------------------------------------------------------*/
+
+.main {
+  padding-right: 2%;
+  padding-left: 2%
+}
