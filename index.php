@@ -365,9 +365,9 @@
       <div class="row gy-4">
         <div class="col-lg-6 col-md-12 footer-about">
           <a aria-label="Link al sitio web valor del tiempo" href="index.php" class="logo d-flex align-items-center">
-            <span class="sitename">Calculadora de salario neto</span>
+            <span class="sitename"><i class="bi bi-file-earmark-person"></i> Valor del tiempo</span>
           </a>
-          <p>Sitio web que permite el cálculo del salario neto en base al salario bruto mensual, junto a otras estadísticas</p>
+          <p>Una herramienta segura, rápida y gratuita. En ‘El Valor Del Tiempo’, tu privacidad es nuestra prioridad. Calcula tu salario neto sin preocuparte por tus datos. Conoce tus ingresos reales en elvalordeltiempo.com. ¡Inténtalo hoy!</p>
           <hr/>
           <p>En este caso el aporte de impuesto a la renta es definido automáticamente en base al ingreso mensual bruto, esto puesto a que difiere de acuerdo a la cantidad</p>
           <div class="social-links d-flex mt-4">
@@ -381,11 +381,12 @@
           <hr/>
           <p>Moravia, San Jose</p>
           <p>Costa Rica</p>
+          <p class="mt-4"><strong>Email:</strong> <span>valordeltiempo@gmail.com</span></p>
         </div>
 
         <div class="col-lg-12 col-md-12 footer-about text-center text-md-start">
           <hr/>
-          <p>Transforma tus números en claridad. Usa ‘El Valor Del Tiempo’ para conocer exactamente cuánto ganas después de los rebajos de ley. Una herramienta fácil, rápida y gratuita en elvalordeltiempo.com. ¡Porque tu tiempo vale oro,</p>
+          <p>Transforma tus números en claridad. Usa ‘El Valor Del Tiempo’ para conocer exactamente cuánto ganas después de los rebajos de ley. Una herramienta fácil, rápida y gratuita en valordeltiempo.com. ¡Porque tu tiempo vale oro!</p>
         </div>
 
       </div>
