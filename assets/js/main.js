@@ -25,7 +25,8 @@ const currencySymbol = '₡';
 
 document.getElementById('result').style.display = 'none';
 document.getElementById('mensajed').style.display = 'none';
-document.getElementById('miniresultado').style.display = 'none';
+document.getElementById('miniresultadotiempo').style.display = 'none';
+document.getElementById('miniresultadoingreso').style.display = 'none';
 
 function calculate() {
 
@@ -114,7 +115,8 @@ function calculate() {
 
   previousSalary = salary;
 
-  document.getElementById('miniresultado').style.display = 'flex';
+  document.getElementById('miniresultadotiempo').style.display = 'flex';
+  document.getElementById('miniresultadoingreso').style.display = 'flex';
   document.getElementById('result').style.display = 'flex';
 
   window.location.href = '#result';
@@ -133,7 +135,8 @@ function startClock(rate, brutorate) {
   const earnings3Element = document.getElementById('earnings3');
   const brutoearnings3Element = document.getElementById('brutoearnings3');
 
-  const realtimeElement = document.getElementById('miniresultado');
+  const realtimeElement = document.getElementById('miniresultadotiempo');
+  const realtimeearningsElement = document.getElementById('miniresultadoingreso');
 
   clockInterval = setInterval(() => {
 
@@ -174,7 +177,8 @@ function startClock(rate, brutorate) {
     earnings3Element.textContent = `${currencySymbol}${totalEarnedX5.toFixed(2).toLocaleString(undefined, {minimumFractionDigits: 1})}`;
     brutoearnings3Element.textContent = `${currencySymbol}${totalEarnedBrutoX5.toFixed(2).toLocaleString(undefined, {minimumFractionDigits: 1})}`;
 
-    realtimeElement.innerHTML = `<i class="bi bi-hourglass-split"></i> &nbsp; Tiempo desde la consulta: <span class="monospace">${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}</span> <br/><i class="bi bi-coin"></i> &nbsp; Ingresos hasta el momento: &nbsp; ${currencySymbol}${totalEarnedNormal.toFixed(2).toLocaleString(undefined, {minimumFractionDigits: 1})}`;
+    realtimeElement.innerHTML = `<i class="bi bi-hourglass-split"></i> &nbsp; Tiempo desde la consulta:  &nbsp;  &nbsp; <span class="monospace">${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+    realtimeearningsElement.innerHTML = `<i class="bi bi-coin"></i> &nbsp; Ingresos hasta el momento: &nbsp; ${currencySymbol}${totalEarnedNormal.toFixed(2).toLocaleString(undefined, {minimumFractionDigits: 1})}`;
 
 
   }, 1000);

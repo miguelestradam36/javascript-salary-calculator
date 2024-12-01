@@ -111,7 +111,10 @@
               <button class="btn btn-primary" onclick="calculate()">Calcular</button>
             </div>
             <div class="row mb-3">
-              <div class="alert alert-info" id="miniresultado">
+              <div class="alert alert-info" id="miniresultadotiempo">
+              </div>
+              <br/>
+              <div class="alert alert-info" id="miniresultadoingreso">
               </div>
             </div>
           </div>
