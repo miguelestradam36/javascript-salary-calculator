@@ -141,7 +141,7 @@
                 <h3>Aporte Seguro Social</h3>
               </div>
               <div class="col-lg-6 d-flex align-items-center justify-content-center">
-                <h4><sup id="ccss"></sup><span> / mes</span></h4>
+                <h4 id="ccss"></h4>
               </div>
               <div class="col-lg-2 d-flex align-items-center justify-content-center">
                 <img class="img-fluid" src="assets/images/ccss.png" alt="Seguro Social de Costa Rica"/>
@@ -152,7 +152,7 @@
                 <h3>Aporte de Impuesto a la Renta</h3>
               </div>
               <div class="col-lg-6 d-flex align-items-center justify-content-center">
-                <h4><sup id="renta"></sup><span> / mes</span></h4>
+                <h4 id="renta"></h4>
               </div>
               <div class="col-lg-2 d-flex align-items-center justify-content-center">
                 <img class="img-fluid" src="assets/images/hacienda.svg" alt="Ministerio de Hacienda de Costa Rica" />

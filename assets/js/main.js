@@ -46,7 +46,7 @@ function calculate() {
 
   const deductionPercentage = 10.67 / 100 ;
 
-  document.getElementById('mensajed').textContent = `Tu salario mensual bruto es: ${currencySymbol}${salary.toLocaleString(undefined, {minimumFractionDigits: 1})} y trabajas ${workedhours} horas a la semana. Tus resultados están debajo del formulario ${noinput} .`
+  document.getElementById('mensajed').textContent = `Tu salario mensual bruto es: ${currencySymbol}${salary.toFixed(2).toLocaleString(undefined, {minimumFractionDigits: 1})} y trabajas ${workedhours} horas a la semana. Tus resultados están debajo del formulario ${noinput} .`
   document.getElementById('mensajed').style.display = 'flex';
 
   if (salary <= 929000){
@@ -73,31 +73,16 @@ function calculate() {
   let brutohourlyRate = salary / (workedhours * 4.4);
   let brutoperSecond = brutohourlyRate / 3600;
 
-  totaltaxes = parseFloat(totaltaxes.toFixed(2));
-  totalinsurance = parseFloat(totalinsurance.toFixed(2));
-  
-  netSalary = parseFloat(netSalary.toFixed(2));
+  InsuranceElement.innerHTML =  `<sup>${currencySymbol}</sup>${totalinsurance.toFixed(2).toLocaleString(undefined, {minimumFractionDigits: 1})}<span> / mes</span>`;
+  TaxesElement.innerHTML =  `<sup>${currencySymbol}</sup>${totaltaxes.toFixed(2).toLocaleString(undefined, {minimumFractionDigits: 1})}<span> / mes</span>`;
 
-  brutohourlyRate = parseFloat(brutohourlyRate.toFixed(2));
-  brutoperSecond = parseFloat(brutoperSecond.toFixed(2));
+  document.getElementById('seconds').innerHTML = `${currencySymbol}${perSecond.toFixed(2).toLocaleString(undefined, {minimumFractionDigits: 1})}`;
+  document.getElementById('minutes').innerHTML = `${currencySymbol}${perMinute.toFixed(2).toLocaleString(undefined, {minimumFractionDigits: 1})}`;
+  document.getElementById('hours').innerHTML = `${currencySymbol}${hourlyRate.toFixed(2).toLocaleString(undefined, {minimumFractionDigits: 1})}`;
+  document.getElementById('days').innerHTML = `${currencySymbol}${perDay.toFixed(2).toLocaleString(undefined, {minimumFractionDigits: 1})}`;
 
-  perMinute = parseFloat(perMinute.toFixed(2));
-  hourlyRate = parseFloat(hourlyRate.toFixed(2));
-  perSecond = parseFloat(perSecond.toFixed(2));
-  perDay = parseFloat(perDay.toFixed(2));
-
-  salary = parseFloat(salary.toFixed(2));
-
-  InsuranceElement.textContent =  `${currencySymbol}${totalinsurance.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
-  TaxesElement.textContent =  `${currencySymbol}${totaltaxes.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
-
-  document.getElementById('seconds').innerHTML = `${currencySymbol}${perSecond.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
-  document.getElementById('minutes').innerHTML = `${currencySymbol}${perMinute.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
-  document.getElementById('hours').innerHTML = `${currencySymbol}${hourlyRate.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
-  document.getElementById('days').innerHTML = `${currencySymbol}${perDay.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
-
-  document.getElementById('raw').textContent = `${currencySymbol}${salary.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
-  document.getElementById('months').textContent = `${currencySymbol}${netSalary.toLocaleString(undefined, {minimumFractionDigits: 1})}`;
+  document.getElementById('raw').textContent = `${currencySymbol}${salary.toFixed(2).toLocaleString(undefined, {minimumFractionDigits: 1})}`;
+  document.getElementById('months').textContent = `${currencySymbol}${netSalary.toFixed(2).toLocaleString(undefined, {minimumFractionDigits: 1})}`;
 
   if (previousSalary !== salary) {
     totalEarnedNormal = 0;
