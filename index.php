@@ -424,7 +424,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/index.js"></script>
   <script src="assets/js/functions.js"></script>
 <script>
 
