@@ -167,8 +167,8 @@
         <section id="stats" class="stats section">
 
           <div class="container section-title" data-aos="fade-up">
-            <span>Ingresos en diferentes cantidades de tiempo</span>
-            <h2 class="title">Ingresos en diferentes cantidades de tiempo</h2>
+            <span>Ingresos netos en diferentes cantidades de tiempo</span>
+            <h2 class="title">Ingresos netos en diferentes cantidades de tiempo</h2>
             <p class="description">¿Sabes cuánto vale tu tiempo realmente? Descúbrelo en segundos con nuestra herramienta gratuita en valordeltiempo.com. Calcula tu salario neto con precisión y visualiza cada segundo de esfuerzo convertido en ingresos. ¡Haz que tus finanzas trabajen a tu favor!</p>
           </div><!-- End Section Title -->
 
