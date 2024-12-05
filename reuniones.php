@@ -94,35 +94,46 @@
 
         <div class="container">
             <div class="row gy-4 d-flex justify-content-between">
-            <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                <div class="alert alert-success" id="mensajed">
+                <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                    <div class="alert alert-success" id="mensajed">
+                    </div>
+                    <h2 data-aos="fade-up">¿Sabes cuánto vale tu tiempo realmente?</h2>
+                    <p data-aos="fade-up" data-aos-delay="100">¿Cuánto vale tu tiempo? Descúbrelo sin riesgos. En valordeltiempo.com calculamos tu salario neto con precisión y sin guardar tu información. Explora nuestra herramienta y observa cómo cada segundo cuenta. ¡Haz clic ahora y compruébalo por ti mismo!</p>
+
+                    <div class="row mb-3">
+                        <div class="alert alert-info" id="miniresultadotiempo">
+                        </div>
+                        <br/>
+                        <div class="alert alert-info" id="miniresultadoingreso">
+                        </div>
+                    </div>
+
                 </div>
-                <h2 data-aos="fade-up">¿Sabes cuánto vale tu tiempo realmente?</h2>
-                <p data-aos="fade-up" data-aos-delay="100">¿Cuánto vale tu tiempo? Descúbrelo sin riesgos. En valordeltiempo.com calculamos tu salario neto con precisión y sin guardar tu información. Explora nuestra herramienta y observa cómo cada segundo cuenta. ¡Haz clic ahora y compruébalo por ti mismo!</p>
-                <div class="row mb-3">
-                <label class="form-label" for="salary">Ingresa tu salario bruto mensual:</label>
-                <input class="form-control" type="number" id="salary" value="300000" placeholder="300,000.00" min="0" pattern="^(?=.)(\d{1,3}(,\d{3})*)?(\.\d+)?$" required/>
+                <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                    <div class="container">
+                    <img src="assets/images/meeting.png" class="img-fluid" alt="Imagen de una reunion">
+                    </div>
                 </div>
-                <div class="row mb-3">
-                <label class="form-label" for="hours">Ingresa la horas trabajadas por semana:</label>
-                <input class="form-control" type="number" id="workedhours" value="48" placeholder="48" min="0" pattern="^(?=.)(\d{1,3}(,\d{3})*)?(\.\d+)?$" required/>
+                <div class="col-lg-12 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                    <div class="row mb-3">
+                        <label class="form-label" for="salary">Ingresa tu salario bruto mensual:</label>
+                        <input class="form-control" type="number" id="salary" value="300000" placeholder="300,000.00" min="0" pattern="^(?=.)(\d{1,3}(,\d{3})*)?(\.\d+)?$" required/>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="form-label" for="hours">Ingresa la horas trabajadas por semana:</label>
+                        <input class="form-control" type="number" id="workedhours" value="48" placeholder="48" min="0" pattern="^(?=.)(\d{1,3}(,\d{3})*)?(\.\d+)?$" required/>
+                    </div>
+                    <div class="row mb-3">
+                        <button class="btn btn-primary" onclick="AddPerson()">Persona</button>
+                    </div>
+                    <div class="row mb-3">
+                        <section name="peoplenumber" id="peoplenumber">
+                        </section>
+                    </div>
+                    <div class="row mb-3">
+                        <button class="btn btn-primary" onclick="calculate()">Calcular</button>
+                    </div>
                 </div>
-                <div class="row mb-3">
-                <button class="btn btn-primary" onclick="calculate()">Calcular</button>
-                </div>
-                <div class="row mb-3">
-                <div class="alert alert-info" id="miniresultadotiempo">
-                </div>
-                <br/>
-                <div class="alert alert-info" id="miniresultadoingreso">
-                </div>
-                </div>
-            </div>
-            <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                <div class="container">
-                <img src="assets/images/dollar.png" class="img-fluid" alt="Imagen de un dolar">
-                </div>
-            </div>
             </div>
         </div>
         </section>
@@ -195,7 +206,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/reuniones.js"></script>
   <script src="assets/js/functions.js"></script>
 <script>
 
