@@ -36,13 +36,13 @@ function AddPerson(){
   peopleElement.innerHTML = ""; 
 
   for (i = 0; i < peoplearray.length; ++i) {
-    let p = document.createElement('p');
-    p.innerText = peoplearray[i];
+    let p = document.createElement('div');
+    p.innerHTML= `<div class="row">Integrante #${i+1}: ${peoplearray[i][0]} con un salario bruto mensual de: ₡${peoplearray[i][1]} <br/></div>`;
     peopleElement.appendChild(p);
 }
 
   //Show members
-  peopleElement.style.display = 'flex';
+  peopleElement.style.display = 'block';
 }
 
 function DeletePerson(personnumber){
@@ -50,5 +50,5 @@ function DeletePerson(personnumber){
 }
 
 function CalculateMeeting(){
-  
+
 }
