@@ -9,11 +9,11 @@ if (location.protocol !== 'https:') {
 //-----------------------------------
 
 //Global variables
-
+const resultElement  = document.getElementById(`result`);
+const alertElement  = document.getElementById(`miniresultadoingreso`);
 const peopleElement  = document.getElementById(`peoplenumber`);
-peopleElement.style.display = 'none';
+const meetingElement  = document.getElementById(`meetingsettings`);
 
-let people = 0;
 let peoplearray = [];
 /*
 if (isNaN(personsalary_Element) || personsalary_Element <= 0) {
@@ -22,6 +22,31 @@ if (isNaN(personsalary_Element) || personsalary_Element <= 0) {
   return;
 }
 */
+
+resultElement.style.display = 'none';
+alertElement.style.display = 'none';
+peopleElement.style.display = 'none';
+meetingElement.style.display = 'none';
+
+function printMembers(){
+  peopleElement.innerHTML = ""; 
+
+  let contador = 0;
+  for (i = 0; i < peoplearray.length; ++i) {
+    if (peoplearray[i] != null){
+      contador+=1;
+      let p = document.createElement('div');
+      p.innerHTML= `<div class="col-12">Integrante: ${peoplearray[i][0]} con un salario bruto mensual de: ₡${peoplearray[i][1]} / <a class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" onclick="DeletePerson('${peoplearray[i][0]}', '${peoplearray[i][1]}')">Eliminir integrante ${peoplearray[i][0]}</a></div>`;
+      peopleElement.appendChild(p);
+    }
+  }
+  if (contador == 0){
+      let p = document.createElement('div');
+      p.innerHTML= `<div class="col-12">No hay integrantes en este momento</div>`;
+      peopleElement.appendChild(p);
+      return;
+  }
+}
 
 function AddPerson(){
   let persontoadd = [];
@@ -33,19 +58,34 @@ function AddPerson(){
   // Add to main list
   peoplearray.push(persontoadd);
 
-  peopleElement.innerHTML = ""; 
-
-  for (i = 0; i < peoplearray.length; ++i) {
-    let p = document.createElement('div');
-    p.innerHTML= `<div class="row">Integrante #${i+1}: ${peoplearray[i][0]} con un salario bruto mensual de: ₡${peoplearray[i][1]} <br/></div>`;
-    peopleElement.appendChild(p);
-}
+  //Print the list in the html
+  printMembers();
 
   //Show members
   peopleElement.style.display = 'block';
+  meetingElement.style.display = 'block';
 }
 
-function DeletePerson(personnumber){
+function DeletePerson(name, salary){
+  let deleted = false;
+
+  for (i = 0; i < peoplearray.length; ++i) {
+    if (peoplearray[i] != null) {
+      if (name == peoplearray[i][0] && salary == peoplearray[i][1]){
+        deleted = delete peoplearray[i];
+        break;
+      }
+    }
+  }
+  if (deleted){
+    //Print the new list in the html
+    printMembers();
+    return;
+    
+  } else {
+    alert("No fue posible eliminar el elemento.");
+    return;
+  }
 
 }
 

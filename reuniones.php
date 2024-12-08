@@ -95,8 +95,6 @@
         <div class="container">
             <div class="row gy-4 d-flex justify-content-between">
                 <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                    <div class="alert alert-success" id="mensajed">
-                    </div>
                     <h2 data-aos="fade-up">¿Sabes cuánto vale tu tiempo realmente?</h2>
                     <p data-aos="fade-up" data-aos-delay="100">¿Cuánto vale tu tiempo? Descúbrelo sin riesgos. En valordeltiempo.com calculamos tu salario neto con precisión y sin guardar tu información. Explora nuestra herramienta y observa cómo cada segundo cuenta. ¡Haz clic ahora y compruébalo por ti mismo!</p>
 
@@ -127,16 +125,24 @@
                     <img src="assets/images/meeting.png" class="img-fluid" alt="Imagen de una reunion">
                     </div>
                 </div>
-                <div class="col-lg-12 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                    <div class="container">
-                        <div class="row">
-                            <section name="peoplenumber" id="peoplenumber">
-                            </section>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
+        </section>
+        <section name="meetingsettings" id="meetingsettings">
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <span>Ajustes de la Reunión</span>
+                <h2>Ajustes de la Reunión</h2>
+                <p>Elige los integrantes de tu reunión</p>
+            </div>
+            <!-- End Section Title -->
+            <div class="container">
+                <div class="row">
+                    <section name="peoplenumber" id="peoplenumber"  class="row gy-4">
+
+                    </section>
+                </div>
+            </div>
         </section>
         <section name="result" id="result" class="row gy-4">
 
