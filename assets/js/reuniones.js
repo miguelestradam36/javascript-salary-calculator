@@ -61,12 +61,19 @@ function AddPerson(){
   //Print the list in the html
   printMembers();
 
+  //Alert on the form
+  alertElement.textContent = `Añadiste a ${namevalue} a la reunión`;
+
   //Show members
   peopleElement.style.display = 'block';
   meetingElement.style.display = 'block';
+  alertElement.style.display = 'flex';
 }
 
 function DeletePerson(name, salary){
+
+  alertElement.style.display = 'none';
+
   let deleted = false;
 
   for (i = 0; i < peoplearray.length; ++i) {
@@ -80,8 +87,15 @@ function DeletePerson(name, salary){
   if (deleted){
     //Print the new list in the html
     printMembers();
+    let p = document.createElement('div');
+    p.innerHTML= `<div class="col-12">
+      <div class="alert alert-info" role="alert">
+        Eliministe a ${name} de la reunión
+      </div>
+    </div>`;
+    peopleElement.appendChild(p);
     return;
-    
+
   } else {
     alert("No fue posible eliminar el elemento.");
     return;

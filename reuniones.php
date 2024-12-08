@@ -101,6 +101,10 @@
                     <div class="row">
                         <div class="col-lg-12 order-2 order-lg-1 d-flex flex-column justify-content-center">
                             <div class="row mb-3">
+                                <div class="alert alert-info" id="miniresultadoingreso">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
                                 <label class="form-label" for="salary">Ingresa el nombre del participante:</label>
                                 <input class="form-control" type="text" name="name" id="name" placeholder="Nombre" required/>
                             </div>
@@ -110,10 +114,6 @@
                             </div>
                             <div class="row mb-3">
                                 <button class="btn btn-primary" onclick="AddPerson()">Sumar integrante</button>
-                            </div>
-                            <div class="row mb-3">
-                                <div class="alert alert-info" id="miniresultadoingreso">
-                                </div>
                             </div>
                             <br/>
                         </div>
