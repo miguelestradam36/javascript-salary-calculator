@@ -158,7 +158,19 @@ function CalculateMeeting(){
       totalcost += perMinute * time;
     }
   }
-  resultElement.textContent = `Costo: ₡${totalcost}`;
+  resultElement.innerHTML = `
+    <div class="col-lg-12" data-aos="zoom-in">
+        <div class="pricing-item">
+          <h3>Costo de la reunión</h3>
+          <h4><sup>₡</sup>${totalcost}<span> / reunión</span></h4>
+          <ul>
+            <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+            <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+            <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+          </ul>
+        </div>
+    </div><!-- End Pricing Item -->
+  `;
   //Show results
   resultElement.style.display = 'block';
 }

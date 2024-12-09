@@ -1,12 +1,15 @@
-peopleElement.innerHTML += 
-`<div id="person${people}">
-  <div class="input-group mb-3">
-    <div class="input-group-prepend">
-      <span class="input-group-text">Member #${people}</span>
+
+<div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+    <div class="pricing-item">
+      <h3>Free Plan</h3>
+      <h4><sup>$</sup>0<span> / month</span></h4>
+      <ul>
+        <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+        <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+        <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+        <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
+        <li class="na"><i class="bi bi-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+      </ul>
+      <a href="#" class="buy-btn">Buy Now</a>
     </div>
-    <input id="person${people}salary" type="number" class="form-control" placeholder="Gross salary" aria-label="Gross salary" pattern="^(?=.)(\d{1,3}(,\d{3})*)?(\.\d+)?$" required>
-  </div>
-  <div class="input-group mb-3">
-    <button class="btn btn-danger" onclick="DeletePerson(${people})">Delete member #${people}</button>
-  </div>
-</div>`;
+</div><!-- End Pricing Item -->

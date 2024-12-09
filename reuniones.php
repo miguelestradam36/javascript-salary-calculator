@@ -147,7 +147,7 @@
                 </div>
             </div>
         </section>
-        <section name="result" id="result" class="row gy-4">
+        <section id="result" class="pricing section">
 
         </section>
     </main>
