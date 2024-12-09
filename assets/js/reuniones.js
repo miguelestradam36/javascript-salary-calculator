@@ -16,13 +16,6 @@ const meetingElement  = document.getElementById(`meetingsettings`);
 const formsectionElement = document.getElementById(`formsection`);
 
 let peoplearray = [];
-/*
-if (isNaN(personsalary_Element) || personsalary_Element <= 0) {
-  alert("Por favor, ingresa un salario válido en el anterior integrante antes de solicitar un integrante mas.");
-  people = people - 1;
-  return;
-}
-*/
 
 resultElement.style.display = 'none';
 alertElement.style.display = 'none';
@@ -74,7 +67,7 @@ function printMembers(){
     if (peoplearray[i] != null){
       contador+=1;
       let p = document.createElement('div');
-      p.innerHTML= `<div class="col-12">Integrante: ${peoplearray[i][0]} con un salario bruto mensual de: ₡${peoplearray[i][1]} / <a class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" onclick="DeletePerson('${peoplearray[i][0]}', '${peoplearray[i][1]}')">Eliminir integrante ${peoplearray[i][0]}</a></div>`;
+      p.innerHTML= `<div class="col-12">Integrante: ${peoplearray[i][0]} con un salario bruto mensual de: ₡${parseFloat(peoplearray[i][1]).toFixed(2).toLocaleString(undefined, {minimumFractionDigits: 1})} / <a class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" onclick="DeletePerson('${peoplearray[i][0]}', '${peoplearray[i][1]}')">Eliminir integrante ${peoplearray[i][0]}</a></div>`;
       peopleElement.appendChild(p);
     }
   }
@@ -94,6 +87,7 @@ function AddPerson(){
   let persontoadd = [];
   const namevalue  = document.getElementById(`name`).value;
   const salaryvalue = document.getElementById(`salary`).value;
+
   persontoadd.push(namevalue);
   persontoadd.push(salaryvalue);
   // persontoadd: ['name', 'salary']
@@ -110,6 +104,9 @@ function AddPerson(){
   peopleElement.style.display = 'block';
   meetingElement.style.display = 'block';
   alertElement.style.display = 'flex';
+
+  //Hidde results uppon change in list
+  resultElement.style.display = 'none';
 }
 
 function DeletePerson(name, salary){
@@ -122,6 +119,10 @@ function DeletePerson(name, salary){
     if (peoplearray[i] != null) {
       if (name == peoplearray[i][0] && salary == peoplearray[i][1]){
         deleted = delete peoplearray[i];
+
+        //Hidde results uppon change in list
+        resultElement.style.display = 'none';
+
         break;
       }
     }
@@ -142,7 +143,6 @@ function DeletePerson(name, salary){
     alert("No fue posible eliminar el elemento.");
     return;
   }
-
 }
 
 function CalculateMeeting(){
@@ -162,11 +162,11 @@ function CalculateMeeting(){
     <div class="col-lg-12" data-aos="zoom-in">
         <div class="pricing-item">
           <h3>Costo de la reunión</h3>
-          <h4><sup>₡</sup>${totalcost}<span> / reunión</span></h4>
+          <h4><sup>₡</sup>${parseFloat(totalcost).toFixed(2).toLocaleString(undefined, {minimumFractionDigits: 1})}<span> / reunión</span></h4>
           <ul>
-            <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-            <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-            <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+            <li><i class="bi bi-alarm"></i> <span>La reunión cuenta con un total de ${time} minutos.</span></li>
+            <li><i class="bi bi-calendar-event-fill"></i> <span>Los integrantes de la reunión trabajan un total de ${workedhoursperweek} por semana</span></li>
+            <li><i class="bi bi-check"></i> <span>Los datos están basados en el salario bruto de los integrantes</span></li>
           </ul>
         </div>
     </div><!-- End Pricing Item -->

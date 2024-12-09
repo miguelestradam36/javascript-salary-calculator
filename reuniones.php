@@ -100,21 +100,23 @@
 
                     <div class="row">
                         <div class="col-lg-12 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                            <div class="row mb-3">
-                                <div class="alert alert-info" id="miniresultadoingreso">
+                            <form action="javascript:AddPerson()">
+                                <div class="row mb-3">
+                                    <div class="alert alert-info" id="miniresultadoingreso">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="row mb-3">
-                                <label class="form-label" for="salary">Ingresa el nombre del participante:</label>
-                                <input class="form-control" type="text" name="name" id="name" placeholder="Nombre" required/>
-                            </div>
-                            <div class="row mb-3">
-                                <label class="form-label" for="hours">Ingresa el salario mensual bruto del participante:</label>
-                                <input class="form-control" type="number" name="salary" id="salary" placeholder="300,000.00" min="0" pattern="^(?=.)(\d{1,3}(,\d{3})*)?(\.\d+)?$" required/>
-                            </div>
-                            <div class="row mb-3">
-                                <button class="btn btn-primary" onclick="AddPerson()">Sumar integrante</button>
-                            </div>
+                                <div class="row mb-3">
+                                    <label class="form-label" for="salary">Ingresa el nombre del participante:</label>
+                                    <input class="form-control" type="text" name="name" id="name" placeholder="Nombre" required/>
+                                </div>
+                                <div class="row mb-3">
+                                    <label class="form-label" for="hours">Ingresa el salario mensual bruto del participante:</label>
+                                    <input class="form-control" type="number" name="salary" id="salary" placeholder="300,000.00" min="0" pattern="^(?=.)(\d{1,3}(,\d{3})*)?(\.\d+)?$" required/>
+                                </div>
+                                <div class="row mb-3">
+                                    <button class="btn btn-primary" type="submit">Sumar integrante</button>
+                                </div>
+                            </form>
                             <br/>
                         </div>
                     </div>

@@ -909,40 +909,6 @@ section,
   margin-bottom: 40px;
 }
 
-.hero form {
-  background: color-mix(in srgb, var(--default-color) 5%, white 90%);
-  padding: 10px;
-  border-radius: 10px;
-}
-
-.hero form .form-control {
-  padding-top: 18px;
-  padding-bottom: 18px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border: none;
-  margin-right: 10px;
-  border: none !important;
-  background: none !important;
-}
-
-.hero form .form-control:hover,
-.hero form .form-control:focus {
-  outline: none;
-  box-shadow: none;
-}
-
-.hero form .btn-primary {
-  color: var(--contrast-color);
-  background-color: var(--accent-color);
-  flex-shrink: 0;
-  padding: 0 25px;
-}
-
-.hero form .btn-primary:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 15%);
-}
-
 .hero .stats-item {
   padding: 30px;
   width: 100%;
