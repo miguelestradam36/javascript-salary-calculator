@@ -13,6 +13,7 @@ const resultElement  = document.getElementById(`result`);
 const alertElement  = document.getElementById(`miniresultadoingreso`);
 const peopleElement  = document.getElementById(`peoplenumber`);
 const meetingElement  = document.getElementById(`meetingsettings`);
+const formsectionElement = document.getElementById(`formsection`);
 
 let peoplearray = [];
 /*
@@ -27,6 +28,43 @@ resultElement.style.display = 'none';
 alertElement.style.display = 'none';
 peopleElement.style.display = 'none';
 meetingElement.style.display = 'none';
+formsectionElement.style.display = 'none';
+
+function printCalculationForm(){
+  formsectionElement.innerHTML = ""; 
+
+  let div = document.createElement('div');
+
+  div.innerHTML= `<div class="col-12">
+
+  <h4>Ajustes finales</h2>
+  <hr/>
+
+  <div class="row mb-3">
+    <label class="form-label" for="week">Ingresa la horas laboradas por semana de los integrantes:</label>
+    <select id="week" class="form-select" aria-label="Horas laboradas por semana">
+      <option value="40">40</option>
+      <option value="45">45</option>
+      <option value="48" selected>48</option>
+    </select>
+  </div>
+
+  <div class="row mb-3">
+    <label class="form-label" for="meetingminutes">Ingresa el número de minutos de la reunión:</label>
+    <input class="form-control" type="number" id="meetingminutes" value="60" placeholder="60" min="0" pattern="^(?=.)(\d{1,3}(,\d{3})*)?(\.\d+)?$" required/>
+  </div>
+
+  <div class="row mb-3">
+    <button class="btn btn-success" onclick="CalculateMeeting()">Calcular costes de la reunión</button>
+  </div>
+  
+  </div>`;
+
+  formsectionElement.appendChild(div);
+
+  //Show form
+  formsectionElement.style.display = 'block';
+}
 
 function printMembers(){
   peopleElement.innerHTML = ""; 
@@ -41,10 +79,14 @@ function printMembers(){
     }
   }
   if (contador == 0){
-      let p = document.createElement('div');
-      p.innerHTML= `<div class="col-12">No hay integrantes en este momento</div>`;
-      peopleElement.appendChild(p);
-      return;
+    let p = document.createElement('div');
+    p.innerHTML= `<div class="col-12">No hay integrantes en este momento</div>`;
+    peopleElement.appendChild(p);
+    formsectionElement.style.display = 'none';
+    return;
+  } else {
+    //Print calculation form
+    printCalculationForm();
   }
 }
 
@@ -104,5 +146,19 @@ function DeletePerson(name, salary){
 }
 
 function CalculateMeeting(){
+  let totalcost = 0;
 
+  const workedhoursperweek  = document.getElementById(`week`).value;
+  const time  = document.getElementById(`meetingminutes`).value;
+
+  for (i = 0; i < peoplearray.length; ++i) {
+    if (peoplearray[i] != null){
+      let hourlyRate = peoplearray[i][1] / (workedhoursperweek * 4.4);
+      let perMinute = hourlyRate / 60;
+      totalcost += perMinute * time;
+    }
+  }
+  resultElement.textContent = `Costo: ₡${totalcost}`;
+  //Show results
+  resultElement.style.display = 'block';
 }
