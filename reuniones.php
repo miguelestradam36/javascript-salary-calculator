@@ -3,7 +3,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="es" prefix="og: https://valordeltiempo.com">
+<html lang="es" prefix="og: https://valordeltiempo.com/reuniones.php">
 <head>
   <meta charset="UTF-8">
 
@@ -11,33 +11,33 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>ValordelTiempo - Calculadora de Salario Neto</title>
+  <title>ValordelTiempo - Calculadora de Reuniones</title>
   
   <!-- General Meta Tags -->
-  <meta name="title" content="ValordelTiempo - Calculadora de Salario Neto">
-  <meta name="description" content="Calculadora de salario neto en base a salario bruto mensual, conoce tu aporte de impuesto a la renta y el seguro social costarricense por mes">
+  <meta name="title" content="ValordelTiempo - Calculadora de Reuniones">
+  <meta name="description" content="Calculadora de Reuniones en base a salario bruto mensual, conoce tu aporte de impuesto a la renta y el seguro social costarricense por mes">
   <meta name="keywords" content="salario neto, salario bruto, costa rica, valor del tiempo, valordeltiempo, salarios costa rica, análisis de salario neto, análisis de salario bruto, impuesto a la renta, impuestos">
   <meta name="image" content="assets/images/favicon.png">
   
   <!-- General Meta Tags - Different Syntax -->
-  <meta itemprop="name" content="Calculadora de Salario Neto">
-  <meta itemprop="description" content="Calculadora de salario neto en base a salario bruto mensual, conoce tu aporte de impuesto a la renta y el seguro social costarricense por mes">
+  <meta itemprop="name" content="Calculadora de Reuniones">
+  <meta itemprop="description" content="Calculadora de Reuniones en base a salario bruto mensual, conoce tu aporte de impuesto a la renta y el seguro social costarricense por mes">
   <meta itemprop="image" content="assets/images/favicon.png">
-  <link rel="canonical" href="https://valordeltiempo.com" />
+  <link rel="canonical" href="https://valordeltiempo.com/reuniones.php" />
   
   <!-- Open Graph Meta Tags -->
-  <meta property="og:url" content="https://valordeltiempo.com">
+  <meta property="og:url" content="https://valordeltiempo.com/reuniones.php">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/images/favicon.png">
-  <meta property="og:description" content="Calculadora de salario neto en base a salario bruto mensual, conoce tu aporte de impuesto a la renta y el seguro social costarricense por mes">
-  <meta property="og:title" content="Calculadora de Salario Neto">
-  <meta property="og:site_name" content="Calculadora de Salario Neto">
+  <meta property="og:description" content="Calculadora de Reuniones en base a salario bruto mensual, conoce tu aporte de impuesto a la renta y el seguro social costarricense por mes">
+  <meta property="og:title" content="Calculadora de Reuniones">
+  <meta property="og:site_name" content="Calculadora de Reuniones">
   
   <!-- Twitter/X Meta Tags -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:url" content="https://valordeltiempo.com">
-  <meta name="twitter:title" content="Calculadora de Salario Neto">
-  <meta name="twitter:description" content="Calculadora de salario neto en base a salario bruto mensual, conoce tu aporte de impuesto a la renta y el seguro social costarricense por mes">
+  <meta name="twitter:url" content="https://valordeltiempo.com/reuniones.php">
+  <meta name="twitter:title" content="Calculadora de Reuniones">
+  <meta name="twitter:description" content="Calculadora de Reuniones en base a salario bruto mensual, conoce tu aporte de impuesto a la renta y el seguro social costarricense por mes">
   <meta name="twitter:image" content="assets/images/favicon.png">
 
   <!-- Favicons -->
@@ -79,7 +79,8 @@
 
             <nav id="navmenu" class="navmenu">
             <ul>
-                <li><a href="index.php" class="active">Inicio<br></a></li>
+                <li><a href="index.php">Inicio<br></a></li>
+                <li><a href="reuniones.php" class="active">Inicio<br></a></li>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
@@ -95,8 +96,8 @@
         <div class="container">
             <div class="row gy-4 d-flex justify-content-between">
                 <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                    <h2 data-aos="fade-up">¿Sabes cuánto vale tu tiempo realmente?</h2>
-                    <p data-aos="fade-up" data-aos-delay="100">¿Cuánto vale tu tiempo? Descúbrelo sin riesgos. En valordeltiempo.com calculamos tu salario neto con precisión y sin guardar tu información. Explora nuestra herramienta y observa cómo cada segundo cuenta. ¡Haz clic ahora y compruébalo por ti mismo!</p>
+                    <h2 data-aos="fade-up">¿Sabes cuánto vale una reunión normalmente?</h2>
+                    <p data-aos="fade-up" data-aos-delay="100">Descúbrelo con esta herramienta</p>
 
                     <div class="row">
                         <div class="col-lg-12 order-2 order-lg-1 d-flex flex-column justify-content-center">
