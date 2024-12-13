@@ -153,7 +153,7 @@ function CalculateMeeting(){
 
   for (i = 0; i < peoplearray.length; ++i) {
     if (peoplearray[i] != null){
-      let hourlyRate = peoplearray[i][1] / (workedhoursperweek * 4.4);
+      let hourlyRate = (peoplearray[i][1] * 1.42) / (workedhoursperweek * 4.4);
       let perMinute = hourlyRate / 60;
       totalcost += perMinute * time;
     }
@@ -167,6 +167,7 @@ function CalculateMeeting(){
             <li><i class="bi bi-alarm"></i> <span>La reunión cuenta con un total de ${time} minutos.</span></li>
             <li><i class="bi bi-calendar-event-fill"></i> <span>Los integrantes de la reunión trabajan un total de ${workedhoursperweek} por semana</span></li>
             <li><i class="bi bi-check"></i> <span>Los datos están basados en el salario bruto de los integrantes</span></li>
+            <li><i class="bi bi-building-check"></i> <span>En el caso de Costa Rica, el empleador deberá pagar unos cargos adicionales a sus empleados. Esta calculadora contempla que estas cargas sociales, suman alrededor de un 42% al coste de un empleado (un 42% adicional sobre el salario bruto).</span></li>
           </ul>
         </div>
     </div><!-- End Pricing Item -->
