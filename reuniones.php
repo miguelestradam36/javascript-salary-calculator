@@ -16,7 +16,7 @@
   <!-- General Meta Tags -->
   <meta name="title" content="ValordelTiempo - Calculadora de Reuniones">
   <meta name="description" content="Calculadora de Reuniones en base a salario bruto mensual, conoce tu aporte de impuesto a la renta y el seguro social costarricense por mes">
-  <meta name="keywords" content="salario neto, salario bruto, costa rica, valor del tiempo, valordeltiempo, salarios costa rica, análisis de salario neto, análisis de salario bruto, impuesto a la renta, impuestos">
+  <meta name="keywords" content="salario neto, salario bruto, costa rica, valor del tiempo, valordeltiempo, salarios costa rica, análisis de salario neto, análisis de salario bruto, impuesto a la renta, impuestos, calculadora de coste de reuniones, coste de reuniones, reuniones y salarios, reuniones costa rica, costa rica, salarios netos costa rica">
   <meta name="image" content="assets/images/favicon.png">
   
   <!-- General Meta Tags - Different Syntax -->
@@ -28,7 +28,14 @@
   <!-- Open Graph Meta Tags -->
   <meta property="og:url" content="https://valordeltiempo.com/reuniones.php">
   <meta property="og:type" content="website">
+
   <meta property="og:image" content="assets/images/favicon.png">
+  <meta property="og:image:secure_url" content="assets/images/favicon.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="400" />
+  <meta property="og:image:height" content="300" />
+  <meta property="og:image:alt" content="Calculadora de salario neto en base a salario bruto mensual, conoce tu aporte de impuesto a la renta y el seguro social costarricense por mes" />
+
   <meta property="og:description" content="Calculadora de Reuniones en base a salario bruto mensual, conoce tu aporte de impuesto a la renta y el seguro social costarricense por mes">
   <meta property="og:title" content="Calculadora de Reuniones">
   <meta property="og:site_name" content="Calculadora de Reuniones">

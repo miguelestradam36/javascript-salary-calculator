@@ -16,7 +16,7 @@
   <!-- General Meta Tags -->
   <meta name="title" content="ValordelTiempo - Calculadora de Salario Neto">
   <meta name="description" content="Calculadora de salario neto en base a salario bruto mensual, conoce tu aporte de impuesto a la renta y el seguro social costarricense por mes">
-  <meta name="keywords" content="salario neto, salario bruto, costa rica, valor del tiempo, valordeltiempo, salarios costa rica, análisis de salario neto, análisis de salario bruto, impuesto a la renta, impuestos">
+  <meta name="keywords" content="salario neto, salario bruto, costa rica, valor del tiempo, valordeltiempo, salarios costa rica, análisis de salario neto, análisis de salario bruto, impuesto a la renta, impuestos, calculadora de salario neto, impuestos costa rica, salarios costa rica, calculadora de salario">
   <meta name="image" content="assets/images/favicon.png">
   <meta name="author" content="Leonardo Murillo">
   
@@ -32,7 +32,7 @@
 
   <meta property="og:image" content="assets/images/favicon.png">
   <meta property="og:image:secure_url" content="assets/images/favicon.png" />
-  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="400" />
   <meta property="og:image:height" content="300" />
   <meta property="og:image:alt" content="Calculadora de salario neto en base a salario bruto mensual, conoce tu aporte de impuesto a la renta y el seguro social costarricense por mes" />
